@@ -1,0 +1,16 @@
+time.sleep(4)
+    main = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.ID, "root"))
+    )
+    # print(main.text)
+    # search = main.find_elements(By.XPATH, class_)
+    search = main.find_elements(By.CSS_SELECTOR, class_)
+    # print(main.get_attribute('innerHTML'))
+    if not search:
+        print("Elements not found")
+    else:
+        print("Elements found")
+        for i in range(19, 25):
+            print(search[i].text)
+    time.sleep(3)
+
