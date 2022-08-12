@@ -35,18 +35,6 @@ def parsing_alpha_2(driver_, class_name):
             break
 
 
-def for_clicking(driver_, link_text):
-    element = WebDriverWait(driver_, 10).until(
-        EC.presence_of_element_located((By.LINK_TEXT, "Вклады"))
-    )
-    element.click()
-
-    element = WebDriverWait(driver_, 10).until(
-        EC.presence_of_element_located((By.LINK_TEXT, link_text))
-    )
-    element.click()
-
-
 def use_button_alfa(driver_, filter_, class_name=".a28gX.k28gX.h28gX.l28gX.c28gX.cxDc6"):
     # Тут было что-то
     while True:
@@ -105,7 +93,7 @@ if __name__ == '__main__':
     options.add_argument('--incognito')
     # options.add_argument('--start-maximized')
     options.add_argument('window-size=1920,1080')
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
     alfa(browser)
     browser.quit()

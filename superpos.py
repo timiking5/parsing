@@ -4,32 +4,41 @@ from alfa import alfa
 from rshb import rshb
 from gazprom import gazprom
 from mkb import mkb
+from sber import sber
 
 
 # service=Service(ChromeDriverManager().install())  -  для будущих разрабов
 # options.add_argument('--start-maximized')  -  для некоторых браузеров/cайтов это лучше
 
-options = webdriver.ChromeOptions()
-options.add_argument('--ignore-certificate-errors')
-options.add_argument('--incognito')
-options.add_argument('window-size=1920,1080')
-options.add_argument('--headless')
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--ignore-certificate-errors')
+chrome_options.add_argument('--incognito')
+chrome_options.add_argument('window-size=1920,1080')
+# chrome_options.add_argument('--headless')
 
-PATH = "C:\\Program Files (x86)\\chromedriver.exe"  # путь до браузера
+firefox_options = webdriver.FirefoxOptions()
+# firefox_options.add_argument('--headless')
+firefox_options.add_argument('--ignore-certificate-errors')
+firefox_options.add_argument('--incognito')
+
+PATH_GOOGLE = "C:\\Program Files (x86)\\chromedriver.exe"  # путь до браузера
+PATH_GECKO = "C:\\Program Files (x86)\\geckodriver.exe"
 # Важно, чтобы оно совпадало с версией браузера на компе!!
-browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
 
-vtb(browser)
+browser_chrome = webdriver.Chrome(executable_path=PATH_GOOGLE, chrome_options=chrome_options)
+browser_firefox = webdriver.Firefox(executable_path=PATH_GECKO, options=firefox_options)
+
+vtb(browser_chrome)
 print('=' * 30)
-alfa(browser)
+alfa(browser_chrome)
 print('=' * 30)
-rshb(browser)
+rshb(browser_chrome)
 print('=' * 30)
-gazprom(browser)
+gazprom(browser_chrome)
 print('=' * 30)
-mkb(browser)
+mkb(browser_chrome)
 print('=' * 30)
-# sber(browser)
+sber(browser_firefox)
 """
 У сбера на сайте, может выскочить страница "Была ли предыдущая страница полезной?"
 либо он может просто запретить доступ роботу на сайт в режиме без окна, поэтому его
@@ -37,5 +46,5 @@ print('=' * 30)
 не засечена
 """
 
-
-browser.quit()
+browser_chrome.quit()
+browser_firefox.quit()
