@@ -27,19 +27,16 @@ def parsing_sber(driver_, filter_, query, a=0, b=2):
 def sber(driver: webdriver):
     try:
         driver.get("https://www.sberbank.ru/ru/person/contributions/deposits/nakopi")
-        driver.get("https://www.sberbank.ru/ru/person/contributions/deposits/nakopi")
         parsing_sber(driver, By.CLASS_NAME, "nswbonus-rates__card")
 
         print('-' * 20)
 
-        driver.get("https://www.sberbank.ru/ru/person/contributions/deposits/sbervklad_a")
         driver.get("https://www.sberbank.ru/ru/person/contributions/deposits/sbervklad_a")
         parsing_sber(driver, By.TAG_NAME, "thead", b=1)
         parsing_sber(driver, By.TAG_NAME, "tbody", b=1)
 
         print('-' * 20)
 
-        driver.get('https://www.sberbank.ru/ru/person/contributions/deposits/av')
         driver.get('https://www.sberbank.ru/ru/person/contributions/deposits/av')
         parsing_sber(driver, By.CLASS_NAME, "aage-rates__card")
 

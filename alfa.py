@@ -1,6 +1,7 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import openpyxl
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.support.ui import WebDriverWait
@@ -35,7 +36,7 @@ def parsing_alpha_2(driver_, class_name):
             break
 
 
-def use_button_alfa(driver_, filter_, class_name=".a28gX.k28gX.h28gX.l28gX.c28gX.cxDc6"):
+def use_button_alfa(driver_, active_sheet, row, col, filter_, class_name=".a28gX.k28gX.h28gX.l28gX.c28gX.cxDc6"):
     # Тут было что-то
     while True:
         time.sleep(1)
@@ -44,7 +45,7 @@ def use_button_alfa(driver_, filter_, class_name=".a28gX.k28gX.h28gX.l28gX.c28gX
         )
         button = main.find_element(filter_, class_name)
         if button:
-
+            active_sheet[f'{chr(col)}{row}'] = button.text
             action = webdriver.common.action_chains.ActionChains(driver_)
             action.move_to_element_with_offset(button, 2, 2)
             action.click()
@@ -52,30 +53,31 @@ def use_button_alfa(driver_, filter_, class_name=".a28gX.k28gX.h28gX.l28gX.c28gX
             break
 
 
-def alfa(driver: webdriver):
+def alfa(driver: webdriver, active_sheet):
     try:
+        row = 2
+        col = 65
         classes = [".a28gX.k28gX.h28gX.l28gX.c28gX.cxDc6",
                    "e1Hrp",
                    "g1f0h"]
-        driver.get('https://alfabank.ru/make-money/savings-account/alfa/')
-        parsing_alpha(driver, classes[1])
-
-        print("-" * 20)
-
-        driver.execute_script(f"window.scrollBy(0, 500)")
-        time.sleep(1)
-        use_button_alfa(driver, By.CSS_SELECTOR)
-        parsing_alpha(driver, classes[1])
-
-        print("-" * 20)
+        # driver.get('https://alfabank.ru/make-money/savings-account/alfa/')
+        # parsing_alpha(driver, classes[1])
+        #
+        # print("-" * 20)
+        #
+        # driver.execute_script(f"window.scrollBy(0, 500)")
+        # time.sleep(1)
+        # use_button_alfa(driver, By.CSS_SELECTOR)
+        # parsing_alpha(driver, classes[1])
+        #
+        # print("-" * 20)
 
         driver.get("https://alfabank.ru/make-money/deposits/alfa/?platformId=alfasite")
-        driver.execute_script(f"window.scrollBy(0, {1200})")
+        driver.execute_script(f"window.scrollBy(0, {800})")
         time.sleep(1)
-        parsing_alpha_2(driver, classes[2])
-        for i in range(6, 0, -1):
+        for i in range(7, 0, -1):
             xpath = f'//*[@id="calculator"]/div[2]/div/div[2]/div/div/div[1]/div[2]/button[{i}]'
-            use_button_alfa(driver, By.XPATH, xpath)
+            use_button_alfa(driver, active_sheet, row, col, By.XPATH, xpath)
             parsing_alpha_2(driver, classes[2])
 
     except Exception as e:
@@ -91,9 +93,13 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
-    # options.add_argument('--start-maximized')
     options.add_argument('window-size=1920,1080')
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
+
     browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
-    alfa(browser)
+
+    wb = openpyxl.open('automated.xlsx')
+    sheet = wb.worksheets[2]
+
+    alfa(browser, sheet)
     browser.quit()
