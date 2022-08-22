@@ -109,6 +109,7 @@ def gazprom_get_urls(driver, active_sheet):
                 row += 1
             else:
                 row += 1
+        print(percents)
 
 
 
@@ -133,16 +134,16 @@ def rshb_get_urls(driver, active_sheet):
                         percents.append(elem.text)
                 break
 
-    if len(percents) == 1:
-        active_sheet[f'C{row}'] = percents[0]
-        active_sheet[f'D{row}'] = percents[0]
-        row += 1
-    elif len(percents) >= 2:
-        active_sheet[f'C{row}'] = percents[0]
-        active_sheet[f'D{row}'] = percents[1]
-        row += 1
-    else:
-        row += 1
+        if len(percents) == 1:
+            active_sheet[f'C{row}'] = percents[0]
+            active_sheet[f'D{row}'] = percents[0]
+            row += 1
+        elif len(percents) >= 2:
+            active_sheet[f'C{row}'] = percents[0]
+            active_sheet[f'D{row}'] = percents[1]
+            row += 1
+        else:
+            row += 1
 
 
 def mkb_get_urls(driver, active_sheet):
@@ -224,6 +225,8 @@ def sber_get_urls(driver, active_sheet):
         except Exception:
             pass
     css_selector = '.dk-sbol-heading.dk-sbol-heading_size_sm.nswbonus-rates__rate'
+
+    hrefs = list(set(hrefs))
     for href in hrefs:
         driver.get(href)
         percents = []
@@ -321,7 +324,7 @@ def alfa_get_urls(driver, active_sheet):
 
 def vtb_get_parse(driver, active_sheet):
     global row
-    class_ = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.fYipUR.numbersstyles__TypographyTitle-foundation-kit__sc-1xhbrzd-4.oZTKn'
+    class_ = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.jEFSaq.numbersstyles__TypographyTitle-foundation-kit__sc-1xhbrzd-4.haHdlc'
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     # element = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
     #     EC.presence_of_element_located((By.LINK_TEXT, "Вклады и счета"))
@@ -384,7 +387,7 @@ wb = openpyxl.open('automated.xlsx')
 sheet = wb.worksheets[1]
 
 try:
-    for i in [5, 2, 3, 4, 0]:  # range(len(urls))
+    for i in [0, 1, 2, 3, 4, 5]:  # range(len(urls))
         print(i)
         firefox.get(urls[i])
         sheet[f'A{row}'] = sites[i]

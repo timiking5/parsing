@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 def press_button(driver_, button):
-    print(button.text)
+    # print(button.text)
     action = webdriver.common.action_chains.ActionChains(driver_)
     action.move_to_element_with_offset(button, 2, 2)
     action.click()
@@ -65,9 +65,8 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
-    # options.add_argument('--start-maximized')
     options.add_argument('window-size=1920,1080')
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
     gazprom(browser)
     browser.quit()

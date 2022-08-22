@@ -85,16 +85,16 @@ def vtb(driver: webdriver):
 
 
 if __name__ == '__main__':
-    PATH = "C:\\Program Files (x86)\\chromedriver.exe"
+    PATH = "C:\\Program Files (x86)\\geckodriver.exe"
     # class_ = """//*[@id="seif-2"]/div/div[2]/div/div[1]/div/div/div[1]/div[2]/div[1]/div/div/div/div/div"""
 
-    options = webdriver.ChromeOptions()
+    options = webdriver.FirefoxOptions()
     options.add_argument('--ignore-certificate-errors')
     # options.add_argument('--start-maximized')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
     # options.add_argument('--headless')
     # service=Service(ChromeDriverManager().install())
-    browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
+    browser = webdriver.Firefox(executable_path=PATH, options=options)
     vtb(browser)
     browser.quit()
