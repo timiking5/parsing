@@ -1,5 +1,6 @@
 import time
 import openpyxl
+import warnings
 # import sys, os
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
@@ -194,6 +195,7 @@ def get_hrefs_vtb(driver: webdriver):
 
 
 if __name__ == '__main__':
+    warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
 
     options = webdriver.ChromeOptions()

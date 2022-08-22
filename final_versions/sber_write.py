@@ -2,6 +2,7 @@ import time
 import sys
 import os
 import openpyxl
+import warnings
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
@@ -187,10 +188,11 @@ if __name__ == '__main__':
     wb = openpyxl.open('testing.xlsx')
     sheet = wb.worksheets[4]
 
+    warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
 
     options = webdriver.ChromeOptions()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
 

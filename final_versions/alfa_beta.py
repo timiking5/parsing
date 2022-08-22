@@ -1,4 +1,5 @@
 import time
+import warnings
 import openpyxl
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -27,6 +28,7 @@ def alfa_write_curr(driver, active_table, row_f):
     bar_selector = '.input__input_bmmfk.input__hasLabel_bmmfk.amount-input__input_1udd5'
     amounts = ["1000", "25000", "50000", "100000", "300000"]
     for k in [2, 3]:
+        print(f"    proccesing {k}/3")
         xpath_switch = f'//*[@id="calculator"]/div[2]/div/div[1]/button[{k}]'
         main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
                 EC.presence_of_element_located((By.ID, "alfa"))
@@ -126,17 +128,19 @@ if __name__ == '__main__':
     table = wb.worksheets[5]
     table_1 = wb.worksheets[6]
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
+    warnings.filterwarnings("ignore")
 
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
 
     browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
 
     # browser.get('https://alfabank.ru/make-money/deposits/alfa/')
     row = 2
+    print("    proccesing 1/3...")
     alfa_write(browser, table, row)
     alfa_write_curr(browser, table_1, row)
     #

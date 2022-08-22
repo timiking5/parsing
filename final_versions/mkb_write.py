@@ -1,5 +1,6 @@
 import time
 import openpyxl
+import warnings
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium import webdriver
@@ -237,6 +238,7 @@ def mkb_write(driver, active_sheet, row_f, slide_by, periods, ind):
 
 if __name__ == '__main__':
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
+    warnings.filterwarnings("ignore")
 
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')

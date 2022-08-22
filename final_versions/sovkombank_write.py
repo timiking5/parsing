@@ -1,4 +1,5 @@
 import time
+import warnings
 import openpyxl
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -47,6 +48,7 @@ if __name__ == '__main__':
     wb = openpyxl.open('testing.xlsx')
     sheet = wb.worksheets[2]
 
+    warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
 
     options = webdriver.ChromeOptions()

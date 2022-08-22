@@ -1,4 +1,5 @@
 import time
+import warnings
 import openpyxl
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -207,6 +208,7 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
 
 if __name__ == '__main__':
     PATH = "C:\\Program Files (x86)\\geckodriver.exe"
+    warnings.filterwarnings("ignore")
 
     options = webdriver.FirefoxOptions()
     options.add_argument('--ignore-certificate-errors')
