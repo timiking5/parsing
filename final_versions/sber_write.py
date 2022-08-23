@@ -112,8 +112,8 @@ def get_from_list(main: WebElement, element: int, mode=0):
             elif mode == 0:
                 buttons[element].click()
             break
-        except Exception as e:
-            print(e)
+        except Exception as g:
+            print(g)
             time.sleep(1)
 
 
@@ -189,17 +189,17 @@ if __name__ == '__main__':
     sheet = wb.worksheets[4]
 
     warnings.filterwarnings("ignore")
-    PATH = "C:\\Program Files (x86)\\chromedriver.exe"
+    PATH = "C:\\Program Files (x86)\\geckodriver.exe"
 
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
+    options = webdriver.FirefoxOptions()
+    # options.add_argument('--headless')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
 
     options.add_argument('--ignore-certificate-errors')
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_experimental_option('useAutomationExtension', False)
-    browser = webdriver.Chrome(executable_path=PATH, options=options)  # executable_path=PATH, chrome_options=options
+    # options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    # options.add_experimental_option('useAutomationExtension', False)
+    browser = webdriver.Firefox(executable_path=PATH, options=options)  # executable_path=PATH, chrome_options=options
 
     row = 1
 

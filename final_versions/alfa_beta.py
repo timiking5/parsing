@@ -28,7 +28,7 @@ def alfa_write_curr(driver, active_table, row_f):
     bar_selector = '.input__input_bmmfk.input__hasLabel_bmmfk.amount-input__input_1udd5'
     amounts = ["1000", "25000", "50000", "100000", "300000"]
     for k in [2, 3]:
-        print(f"    proccesing {k}/3")
+        print(f"    proccesing {k}/3...")
         xpath_switch = f'//*[@id="calculator"]/div[2]/div/div[1]/button[{k}]'
         main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
                 EC.presence_of_element_located((By.ID, "alfa"))

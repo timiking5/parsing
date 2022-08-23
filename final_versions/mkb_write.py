@@ -32,6 +32,7 @@ def get_table(driver, active_sheet, row_f):
             main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
                 EC.presence_of_element_located((By.CLASS_NAME, "js-navigation"))
             )
+            driver.execute_script(f"window.scrollBy(0, {700})")
             buttons = main.find_elements(By.CSS_SELECTOR, '.navigation__item.js-event-markup')
             for button in buttons:
                 if 'Тарифы' in button.text:
@@ -85,6 +86,7 @@ def use_button(driver_, query):
             action.perform()
             # break
 
+
 def use_bar(driver_, request):
     """
     Использует вводное поле.
@@ -102,7 +104,7 @@ def use_bar(driver_, request):
         action = webdriver.common.action_chains.ActionChains(driver_)
         action.click(bar)
         action.send_keys([Keys.BACK_SPACE for _ in range(10)])
-        action.pause(1)
+        # action.pause(1)
         action.send_keys(request)
         action.send_keys(Keys.RETURN)
         action.perform()
@@ -159,7 +161,7 @@ def start(driver, active_sheet, row_f):
                 [0, 75, 150, 200, 200]]
     periods = [['3 мес.', '6 мес.', '9 мес.', '1 год', '18 мес.', '2 года', '3 года'],
                ['3 мес.', '6 мес.', '1 год', '18 мес.', '2 года']]
-
+    print(f"    proccessing 1/4")
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     driver.get(hrefs[0])
     browser.execute_script(f"window.scrollBy(0, {1000})")
@@ -170,7 +172,7 @@ def start(driver, active_sheet, row_f):
     driver.get(hrefs[1])
     browser.execute_script(f"window.scrollBy(0, {1000})")
     time.sleep(1)
-
+    print(f"    proccessing 2/4")
     row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1)
 
     main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
@@ -180,7 +182,7 @@ def start(driver, active_sheet, row_f):
     time.sleep(1)
 
     use_button(driver, 'Хочу пополнять')
-
+    print(f"    proccessing 3/4")
     row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1)
 
     main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
@@ -190,7 +192,7 @@ def start(driver, active_sheet, row_f):
     time.sleep(1)
 
     use_button(driver, 'Хочу снимать')
-
+    print(f"    proccessing 4/4")
     row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1)
 
     return row_f
@@ -237,14 +239,14 @@ def mkb_write(driver, active_sheet, row_f, slide_by, periods, ind):
 
 
 if __name__ == '__main__':
-    PATH = "C:\\Program Files (x86)\\chromedriver.exe"
+    PATH = "C:\\Program Files (x86)\\geckodriver.exe"
     warnings.filterwarnings("ignore")
 
-    options = webdriver.ChromeOptions()
+    options = webdriver.FirefoxOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     """
     Классическое предупреждение для будущих разработчиков: вроде как в селениуме собираются убрать параметр
         executable_path (см. DeprecationWarning при запуске), но сейчас же у меня, как бы я ни пытался, не получается
@@ -252,14 +254,14 @@ if __name__ == '__main__':
         Вместо chrome_options= можно использовать options= ... . Аргумент headless можно использовать по желанию, но
         иногда он приводит к тому, что программа не работает.
         """
-    browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
+    browser = webdriver.Firefox(executable_path=PATH, options=options)
 
     row = 3
     wb = openpyxl.open('testing.xlsx')
     sheet = wb.worksheets[0]
     """В строчке 257 в квадратных скобках указывается номер листа эксель файла.
         Название можно поменять, но и тогда название файла поменяйте."""
-    start(browser, sheet, row)
+    # start(browser, sheet, row)
     get_table(browser, sheet, row)
     browser.quit()
     wb.save('testing.xlsx')

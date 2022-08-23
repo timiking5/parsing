@@ -1,7 +1,8 @@
 import time
 import openpyxl
 import warnings
-# import sys, os
+import sys
+import os
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium import webdriver
@@ -42,8 +43,9 @@ def vtb_write(driver: webdriver, active_sheet, row_f, hrefs):
     class_4 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.gGALTE.markdown-headingstyles__HeadingTypography-foundation-kit__sc-7uz79g-0.frxXnP'
     class_5 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.bIbiHl.table-cellstyles__HeadingTypography-table-cell__sc-pq68xl-2.eMAckD'
     # Да, можно сделать в виде списка, но разница небольшая
-    for href in hrefs:
-        driver.get(href)
+    for k in range(len(hrefs)):
+        print(f"    proccesing {k + 1}/{len(hrefs)}...")
+        driver.get(hrefs[k])
         while True:
             try:
                 main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
@@ -142,10 +144,10 @@ def vtb_write(driver: webdriver, active_sheet, row_f, hrefs):
                     row_f += 1
                     break
 
-            except Exception:
-                # exc_type, exc_obj, exc_tb = sys.exc_info()
-                # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                # print(exc_type, fname, exc_tb.tb_lineno)
+            except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                print(e, exc_type, fname, exc_tb.tb_lineno)
                 time.sleep(1)
 
 
@@ -196,20 +198,20 @@ def get_hrefs_vtb(driver: webdriver):
 
 if __name__ == '__main__':
     warnings.filterwarnings("ignore")
-    PATH = "C:\\Program Files (x86)\\chromedriver.exe"
+    PATH = "C:\\Program Files (x86)\\geckodriver.exe"
 
-    options = webdriver.ChromeOptions()
+    options = webdriver.FirefoxOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     """Классическое предупреждение для будущих разработчиков: вроде как в селениуме собираются убрать параметр
     executable_path (см. DeprecationWarning при запуске), но сейчас же у меня, как бы я ни пытался, не получается
     использовать service=... . Возможно, в будущем это уже будет работать, так что вам придётся с этим запаритсья.
     Вместо chrome_options= можно использовать options= ... . Аргумент headless можно использовать по желанию, но
     иногда он приводит к тому, что программа не работает."""
     # service=Service(ChromeDriverManager().install())
-    browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
+    browser = webdriver.Firefox(executable_path=PATH, options=options)
 
     wb = openpyxl.open('testing.xlsx')
     sheet = wb.worksheets[1]

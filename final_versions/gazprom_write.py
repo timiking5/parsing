@@ -40,6 +40,7 @@ def take_tables(driver, active_sheet, row_f):
                   "\"Управлять\" c капитализ."]
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     for _ in [0, 1, 2]:
+        print(f"    processing {_ + 3}/5...")
         try:
             driver.get(hrefs[_])
             main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
@@ -108,16 +109,15 @@ def parsing_gaz(driver_, row_, col_, active_sheet, filter_, query):
     :param query: "поисковой запрос" для элемента
     :return:
     """
-    ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
+    # ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     while True:
-        time.sleep(1)
-        main_ = WebDriverWait(driver_, 10, ignored_exceptions=ignored_exceptions).until(
-            EC.presence_of_element_located((By.CLASS_NAME, "nr-layout"))
-        )
+        main_ = driver_.find_element(By.CLASS_NAME, "nr-layout")
+
         search = main_.find_element(filter_, query)
         if search:
             active_sheet[f'{chr(col_)}{row_}'] = search.text
             break
+        time.sleep(1)
 
 
 def use_bar(request, times, main_):
@@ -150,6 +150,7 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
     scroll = [1200, 1400]
     times = [7, 6, 7, 7, 7, 7, 8]
     for b in [0, 1]:
+        print(f"    processing {b + 1}/5...")
         browser.get(hrefs[b])
         time.sleep(2)
         browser.execute_script(f"window.scrollBy(0, {scroll[b]})")
@@ -158,13 +159,13 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
         try:
             ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
             while True:
-                time.sleep(1)
                 main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
                     EC.presence_of_element_located((By.CLASS_NAME, "nr-layout"))
                 )  # .chips_tag_group_root__tag--c5c08
                 buttons = main.find_elements(By.CSS_SELECTOR, '.chips_tag_root--3b499')
                 if buttons:
                     break
+                time.sleep(1)
             for i in range(len(buttons)):
                 active_sheet[f'{chr(col + i)}{row_f - 1}'] = buttons[i].text
             for j in range(7):
@@ -214,7 +215,7 @@ if __name__ == '__main__':
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
 
     row = 3
     wb = openpyxl.open('testing.xlsx')

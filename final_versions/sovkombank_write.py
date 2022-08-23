@@ -1,4 +1,3 @@
-import time
 import warnings
 import openpyxl
 from selenium import webdriver
@@ -8,7 +7,7 @@ from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 # from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.remote.webelement import WebElement
+# from selenium.webdriver.remote.webelement import WebElement
 
 
 def sovkom_write(driver: webdriver, active_sheet, row_f):
@@ -16,7 +15,7 @@ def sovkom_write(driver: webdriver, active_sheet, row_f):
              'https://sovcombank.ru/deposits/vklad-udobniy']
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     for k in [0, 1]:
-        print(f'processing {1 + k}/2...')
+        print(f'    processing {1 + k}/2...')
         driver.get(hrefs[k])
         main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, ".Layout__content"))
