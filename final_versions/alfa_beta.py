@@ -1,6 +1,7 @@
 import time
 import warnings
 import openpyxl
+from datetime import date
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
@@ -59,6 +60,8 @@ def alfa_write_curr(driver, active_table, row_f):
 
 def alfa_write(driver: webdriver, active_sheet, row_f):
     global ignored_exceptions
+    active_sheet['A1'] = "Розница"
+    active_sheet['K1'] = "Премиум"
     driver.get('https://alfabank.ru/make-money/deposits/alfa/?platformId=alfasite')
     time.sleep(3)
     driver.execute_script(f"window.scrollBy(0, {800})")
@@ -71,8 +74,11 @@ def alfa_write(driver: webdriver, active_sheet, row_f):
     amounts = ['500000', '1000000', '2000000', '3000000',
                '5000000', '10000000', '20000000']
     switch = main.find_elements(By.CSS_SELECTOR, '.i1HFB')[1]
-    switch.click()
-    change_terms = main.find_elements(By.CSS_SELECTOR, '.a1jwl.g1jwl.j1jwl.l1jwl')
+    switch.click()  #
+    change_terms = main.find_elements(By.CSS_SELECTOR, '.a1GLT.g1GLT.j1GLT.l1GLT')
+    active_sheet[f'A{row_f}'] = 'Без опций'
+    active_sheet[f'A{row_f + 8}'] = 'С пополнением'
+    active_sheet[f'A{row_f + 16}'] = 'С пополнением и снятием'
     for i in range(len(buttons)):
         active_sheet[f'{chr(66 + i)}{row_f}'] = buttons[i].text
         active_sheet[f'{chr(66 + i + 10)}{row_f}'] = buttons[i].text
@@ -124,9 +130,9 @@ def find_percent(main: WebElement):
 
 
 if __name__ == '__main__':
-    wb = openpyxl.open('testing.xlsx')
-    table = wb.worksheets[5]
-    table_1 = wb.worksheets[6]
+    wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
+    table = wb.worksheets[8]
+    table_1 = wb.worksheets[9]
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
     warnings.filterwarnings("ignore")
 
@@ -138,11 +144,11 @@ if __name__ == '__main__':
 
     browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
 
-    # browser.get('https://alfabank.ru/make-money/deposits/alfa/')
+    browser.get('https://alfabank.ru/make-money/deposits/alfa/')
     row = 2
     print("    proccesing 1/3...")
     alfa_write(browser, table, row)
     alfa_write_curr(browser, table_1, row)
     #
     browser.quit()
-    wb.save('testing.xlsx')
+    wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')

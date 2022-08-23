@@ -1,6 +1,7 @@
 import time
 import openpyxl
 import warnings
+from datetime import date
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium import webdriver
@@ -9,6 +10,102 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common import action_chains
 from selenium.webdriver.common.keys import Keys
+
+
+def mkb_get_table_curr(driver: webdriver, active_sheet, row_f):
+    driver.get("https://mkb.ru/personal/deposits/allinclusive")
+    driver.execute_script(f"window.scrollBy(0, {1000})")
+    time.sleep(1)
+    main = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CLASS_NAME, "js-navigation"))
+        )
+    buttons = main.find_elements(By.CSS_SELECTOR, '.navigation__item.js-event-markup')
+    for button in buttons:
+        if "Тарифы" in button.text:
+            button.click()
+            break
+    time.sleep(1)
+    driver.execute_script(f"window.scrollBy(0, {600})")
+    time.sleep(1)
+    # driver.execute_script(f"window.scrollBy(0, {600})")
+    # time.sleep(1)
+
+    currencies = main.find_elements(By.CSS_SELECTOR, '.field.field_radio')
+
+    currencies[1].click()
+    time.sleep(1)
+    ths_1 = main.find_element(By.CSS_SELECTOR, '.table__header').find_elements(By.CSS_SELECTOR, '.table__column')
+    trs_1 = main.find_elements(By.CSS_SELECTOR, '.table__row')
+
+    currencies[2].click()
+    time.sleep(1)
+    ths_2 = main.find_element(By.CSS_SELECTOR, '.table__header').find_elements(By.CSS_SELECTOR, '.table__column')
+    trs_2 = main.find_elements(By.CSS_SELECTOR, '.table__row')
+
+    for i in range(len(ths_1)):
+        active_sheet[f'{chr(75 + i)}{row_f}'] = ths_1[i].text
+    row_f += 1
+
+    for i in range(len(trs_1)):
+        tds = trs_1[i].find_elements(By.CSS_SELECTOR, '.table__column')
+        if tds:
+            for j in range(len(tds)):
+                active_sheet[f'{chr(75 + j)}{row_f}'] = tds[j].text
+            row_f += 1
+
+    row_f += 16
+
+    for i in range(len(ths_2)):
+        active_sheet[f'{chr(75 + i)}{row_f}'] = ths_2[i].text
+    row_f += 1
+
+    for i in range(len(trs_2)):
+        tds = trs_2[i].find_elements(By.CSS_SELECTOR, '.table__column')
+        if tds:
+            for j in range(len(tds)):
+                active_sheet[f'{chr(75 + j)}{row_f}'] = tds[j].text
+            row_f += 1
+
+
+
+def start_curr(driver: webdriver, active_sheet, row_f):
+    ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
+    periods = ['3 мес.', '6 мес.', '1 год', '18 мес.', '2 года']
+    char = ["$", "€"]
+    slide_by = [0, 75, 75, 75, 75]
+    slide = [0, -600]
+    amounts = ["1000", "25000", "50000", "100000", "300000"]
+    driver.get('https://mkb.ru/personal/deposits/allinclusive')
+    driver.execute_script(f"window.scrollBy(0, {1000})")
+    time.sleep(1)
+    main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
+        EC.presence_of_element_located((By.CLASS_NAME, "js-navigation"))
+    )
+    switch = main.find_element(By.CSS_SELECTOR, '.vs__search')
+    for i in range(2):
+        switch.click()
+        switch.send_keys(Keys.ARROW_DOWN, Keys.RETURN)
+        main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
+            EC.presence_of_element_located((By.CLASS_NAME, "js-navigation"))
+        )
+        slider = main.find_elements(By.CSS_SELECTOR, '.vue-slider-dot-handle')[1]
+        webdriver.common.action_chains.ActionChains(driver).drag_and_drop_by_offset(slider, slide[i], 0).perform()
+
+        active_sheet[f'A{row_f - 1}'] = char[i] + " без опций"
+        row_f = mkb_write(driver, active_sheet, row_f, slide_by, periods, 1, amounts)
+        webdriver.common.action_chains.ActionChains(driver).drag_and_drop_by_offset(slider, slide[1], 0).perform()
+
+        active_sheet[f'A{row_f - 1}'] = char[i] + " с пополнением"
+        use_button(driver, "Хочу пополнять")
+        row_f = mkb_write(driver, active_sheet, row_f, slide_by, periods, 1, amounts)
+        webdriver.common.action_chains.ActionChains(driver).drag_and_drop_by_offset(slider, slide[1], 0).perform()
+
+        active_sheet[f'A{row_f - 1}'] = char[i] + " с пополнением и снятием"
+        use_button(driver, "Хочу снимать")
+        row_f = mkb_write(driver, active_sheet, row_f, slide_by, periods, 1, amounts)
+
+        use_button(driver, "Хочу пополнять")
+        use_button(driver, "Хочу снимать")
 
 
 def get_table(driver, active_sheet, row_f):
@@ -22,8 +119,8 @@ def get_table(driver, active_sheet, row_f):
     :return:
     """
     hrefs = ['https://mkb.ru/personal/deposits/mega-online',
-             'https://mkb.ru/personal/deposits/30years',
-             'https://mkb.ru/personal/deposits/allinclusive']
+             'https://mkb.ru/personal/deposits/allinclusive',
+             'https://mkb.ru/personal/deposits/30years']
     col = 75
     for href in hrefs:
         try:
@@ -159,21 +256,24 @@ def start(driver, active_sheet, row_f):
              'https://mkb.ru/personal/deposits/allinclusive']
     slide_by = [[0, 50, 50, 50, 100, 200, 200],
                 [0, 75, 150, 200, 200]]
+    ammounts = ['500000', '1000000', '2000000', '3000000',
+                '5000000', '10000000', '20000000']
     periods = [['3 мес.', '6 мес.', '9 мес.', '1 год', '18 мес.', '2 года', '3 года'],
                ['3 мес.', '6 мес.', '1 год', '18 мес.', '2 года']]
-    print(f"    proccessing 1/4")
+    print(f"    proccessing 1/4...")
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     driver.get(hrefs[0])
-    browser.execute_script(f"window.scrollBy(0, {1000})")
+    driver.execute_script(f"window.scrollBy(0, {1000})")
     time.sleep(1)  # Скролить нужно, потому что иначе невозможно нажимать на кнопки/слайдеры (их не видно)
-
-    row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[0], periods=periods[0], ind=0)
+    active_sheet[f'A{row_f - 1}'] = "МЕГА \"Онлайн\""
+    row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[0], periods=periods[0], ind=0, ammounts=ammounts)
 
     driver.get(hrefs[1])
-    browser.execute_script(f"window.scrollBy(0, {1000})")
+    driver.execute_script(f"window.scrollBy(0, {1000})")
     time.sleep(1)
-    print(f"    proccessing 2/4")
-    row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1)
+    print(f"    proccessing 2/4...")
+    active_sheet[f'A{row_f - 1}'] = "Без опций \"Всё включено\""
+    row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1, ammounts=ammounts)
 
     main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
         EC.presence_of_element_located((By.CLASS_NAME, "js-navigation"))
@@ -182,8 +282,9 @@ def start(driver, active_sheet, row_f):
     time.sleep(1)
 
     use_button(driver, 'Хочу пополнять')
-    print(f"    proccessing 3/4")
-    row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1)
+    print(f"    proccessing 3/4...")
+    active_sheet[f'A{row_f - 1}'] = "С пополнением \"Всё включено\""
+    row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1, ammounts=ammounts)
 
     main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
         EC.presence_of_element_located((By.CLASS_NAME, "js-navigation"))
@@ -192,13 +293,14 @@ def start(driver, active_sheet, row_f):
     time.sleep(1)
 
     use_button(driver, 'Хочу снимать')
-    print(f"    proccessing 4/4")
-    row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1)
+    print(f"    proccessing 4/4...")
+    active_sheet[f'A{row_f - 1}'] = "С пополнением и снятием \"Всё включено\""
+    row_f = mkb_write(driver, active_sheet=active_sheet, row_f=row_f, slide_by=slide_by[1], periods=periods[1], ind=1, ammounts=ammounts)
 
     return row_f
 
 
-def mkb_write(driver, active_sheet, row_f, slide_by, periods, ind):
+def mkb_write(driver, active_sheet, row_f, slide_by, periods, ind, ammounts):
     """
     На конктреной странице находит слайдер и поле ввода. Сначала делает слайд, потом вводит все суммы, потому что
     мне так показалось лучше, чем постоянно дёргать не самый надёжный слайдер.
@@ -215,8 +317,7 @@ def mkb_write(driver, active_sheet, row_f, slide_by, periods, ind):
     неточностей.
     :return:
     """
-    ammounts = ['500000', '1000000', '2000000', '3000000',
-                '5000000', '10000000', '20000000']
+
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
 
     main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
@@ -246,7 +347,7 @@ if __name__ == '__main__':
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     """
     Классическое предупреждение для будущих разработчиков: вроде как в селениуме собираются убрать параметр
         executable_path (см. DeprecationWarning при запуске), но сейчас же у меня, как бы я ни пытался, не получается
@@ -255,13 +356,14 @@ if __name__ == '__main__':
         иногда он приводит к тому, что программа не работает.
         """
     browser = webdriver.Firefox(executable_path=PATH, options=options)
-
+    # browser.get("https://mkb.ru/personal/deposits/allinclusive?tabsBox0=0")
     row = 3
-    wb = openpyxl.open('testing.xlsx')
+    wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
     sheet = wb.worksheets[0]
-    """В строчке 257 в квадратных скобках указывается номер листа эксель файла.
-        Название можно поменять, но и тогда название файла поменяйте."""
+    sheet_1 = wb.worksheets[1]
     # start(browser, sheet, row)
-    get_table(browser, sheet, row)
+    # get_table(browser, sheet, row)
+    # start_curr(browser, sheet_1, row)
+    mkb_get_table_curr(browser, sheet_1, row)
     browser.quit()
-    wb.save('testing.xlsx')
+    wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')

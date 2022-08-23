@@ -1,5 +1,6 @@
 import warnings
 import openpyxl
+from datetime import date
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
@@ -25,7 +26,9 @@ def sovkom_write(driver: webdriver, active_sheet, row_f):
         for i in tables:
             if i.text != '':
                 table = i
-
+        name = main.find_element(By.TAG_NAME, 'h1')
+        active_sheet[f'A{row_f}'] = name.text
+        row_f += 1
         if table:
             rows = table.find_elements(By.TAG_NAME, 'tr')
             for i in range(len(rows)):
@@ -44,8 +47,8 @@ def sovkom_write(driver: webdriver, active_sheet, row_f):
 
 
 if __name__ == '__main__':
-    wb = openpyxl.open('testing.xlsx')
-    sheet = wb.worksheets[2]
+    wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
+    sheet = wb.worksheets[4]
 
     warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
@@ -65,5 +68,5 @@ if __name__ == '__main__':
     except Exception as e:
         print(e)
     finally:
-        wb.save('testing.xlsx')
+        wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')
         browser.quit()

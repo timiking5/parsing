@@ -1,4 +1,6 @@
 @echo off
+echo running init file
+python init.py
 echo running rshb_write
 python rshb_write.py
 echo running psb_write

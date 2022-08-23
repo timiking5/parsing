@@ -593,3 +593,1062 @@ Read port: 53793
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileqUJWsA\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:53773/devtools/browser/9132ea5d-b8d2-4fe5-9966-71ef2f7116f7
 1661239171628	Marionette	INFO	Stopped listening on port 53793
+1661242522605	geckodriver	INFO	Listening on 127.0.0.1:56603
+1661242525729	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "56604" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilePMtx1H"
+*** You are running in headless mode.
+1661242526368	Marionette	INFO	Marionette enabled
+1661242526374	Marionette	INFO	Listening on port 56617
+WebDriver BiDi listening on ws://localhost:56604
+Read port: 56617
+1661242526664	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilePMtx1H\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56604/devtools/browser/829c46ec-5d78-4228-89b6-0b75d3656bab
+1661242537283	Marionette	INFO	Stopped listening on port 56617
+1661242539580	geckodriver	INFO	Listening on 127.0.0.1:56670
+1661242542702	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "56671" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileecovyd"
+*** You are running in headless mode.
+1661242543318	Marionette	INFO	Marionette enabled
+1661242543324	Marionette	INFO	Listening on port 56690
+WebDriver BiDi listening on ws://localhost:56671
+Read port: 56690
+1661242543561	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileecovyd\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56671/devtools/browser/8e5f8040-c6a6-4f44-ad63-87f60f36ccec
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661242634962	Marionette	INFO	Stopped listening on port 56690
+1661242637682	geckodriver	INFO	Listening on 127.0.0.1:56947
+1661242640798	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "56948" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilePCI5aP"
+*** You are running in headless mode.
+1661242641788	Marionette	INFO	Marionette enabled
+1661242641794	Marionette	INFO	Listening on port 56964
+WebDriver BiDi listening on ws://localhost:56948
+Read port: 56964
+1661242642049	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilePCI5aP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56948/devtools/browser/908b05b3-a8d9-491e-ab3c-263ac6042606
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661242723140	Marionette	INFO	Stopped listening on port 56964
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+1661242725883	geckodriver	INFO	Listening on 127.0.0.1:57185
+1661242728980	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--incognito" "window-size=1920,1080" "--ignore-certificate-errors" "--remote-debugging-port" "57186" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileyjtBTt"
+1661242729910	Marionette	INFO	Marionette enabled
+1661242729920	Marionette	INFO	Listening on port 57202
+WebDriver BiDi listening on ws://localhost:57186
+Read port: 57202
+1661242730248	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileyjtBTt\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57186/devtools/browser/3bde1277-1d2d-4598-a867-cdb3a194e158
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/deposits/sbervklad_a line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661242745583	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/promo-upravlyai line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661242861806	Marionette	INFO	Stopped listening on port 57202
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+[Parent 17536, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:554
+1661243138419	geckodriver	INFO	Listening on 127.0.0.1:57880
+1661243141519	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "57881" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileuSmonu"
+*** You are running in headless mode.
+1661243142726	Marionette	INFO	Marionette enabled
+1661243142733	Marionette	INFO	Listening on port 57895
+WebDriver BiDi listening on ws://localhost:57881
+Read port: 57895
+1661243142971	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileuSmonu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57881/devtools/browser/df2e0de2-5254-499a-909d-33cb6bc22b2f
+1661243153197	Marionette	INFO	Stopped listening on port 57895
+1661243164208	geckodriver	INFO	Listening on 127.0.0.1:57977
+1661243167357	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "57978" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilejXaOZr"
+*** You are running in headless mode.
+1661243168006	Marionette	INFO	Marionette enabled
+1661243168011	Marionette	INFO	Listening on port 58000
+WebDriver BiDi listening on ws://localhost:57978
+Read port: 58000
+1661243168242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilejXaOZr\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57978/devtools/browser/5faf2956-63f5-4246-aed5-63b877779e31
+1661243178063	Marionette	INFO	Stopped listening on port 58000
+1661243183627	geckodriver	INFO	Listening on 127.0.0.1:58073
+1661243186741	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "58074" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileTXsDN8"
+*** You are running in headless mode.
+1661243187766	Marionette	INFO	Marionette enabled
+1661243187770	Marionette	INFO	Listening on port 58090
+WebDriver BiDi listening on ws://localhost:58074
+Read port: 58090
+1661243187976	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileTXsDN8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58074/devtools/browser/9eb4a61e-e08d-4c83-b908-72944713d4f0
+1661243339950	Marionette	INFO	Stopped listening on port 58090
+1661243458906	geckodriver	INFO	Listening on 127.0.0.1:58404
+1661243462001	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "58405" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile8uMKEo"
+*** You are running in headless mode.
+1661243462945	Marionette	INFO	Marionette enabled
+1661243462957	Marionette	INFO	Listening on port 58423
+WebDriver BiDi listening on ws://localhost:58405
+Read port: 58423
+1661243463225	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile8uMKEo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58405/devtools/browser/dbaaa716-38fe-4830-97b4-de59cade5240
+1661243507640	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:58510
+1661243555421	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "58511" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileSiNTyi"
+1661243556257	Marionette	INFO	Marionette enabled
+1661243556262	Marionette	INFO	Listening on port 58528
+WebDriver BiDi listening on ws://localhost:58511
+Read port: 58528
+1661243556537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileSiNTyi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58511/devtools/browser/cd533dc9-95a5-41b6-8b93-aaffc35697af
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661243641445	Marionette	INFO	Stopped listening on port 58528
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+1661243738555	geckodriver	INFO	Listening on 127.0.0.1:58885
+1661243741678	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "58886" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilewwKrc1"
+1661243742519	Marionette	INFO	Marionette enabled
+1661243742526	Marionette	INFO	Listening on port 58903
+WebDriver BiDi listening on ws://localhost:58886
+Read port: 58903
+1661243742991	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilewwKrc1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58886/devtools/browser/6cfd5c80-94b5-467c-8806-a3d55c7232a0
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661243762445	Marionette	INFO	Stopped listening on port 58903
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661243791389	geckodriver	INFO	Listening on 127.0.0.1:59038
+1661243794499	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "59039" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileFoh3TY"
+1661243795357	Marionette	INFO	Marionette enabled
+1661243795363	Marionette	INFO	Listening on port 59054
+WebDriver BiDi listening on ws://localhost:59039
+Read port: 59054
+1661243795644	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileFoh3TY\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59039/devtools/browser/5b4a1791-62cb-4a53-9550-3043e51195ad
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661243879359	Marionette	INFO	Stopped listening on port 59054
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+1661244009426	geckodriver	INFO	Listening on 127.0.0.1:59441
+1661244012568	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "59442" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileumm5sL"
+*** You are running in headless mode.
+1661244013184	Marionette	INFO	Marionette enabled
+1661244013191	Marionette	INFO	Listening on port 59462
+WebDriver BiDi listening on ws://localhost:59442
+Read port: 59462
+1661244013373	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileumm5sL\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59442/devtools/browser/5673053d-628c-4fc0-935b-4026fb7808ce
+1661244166471	Marionette	INFO	Stopped listening on port 59462
+!!! error running onStopped callback: TypeError: callback is not a function
+1661244402457	geckodriver	INFO	Listening on 127.0.0.1:59948
+1661244405548	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "59949" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilepBfTNM"
+*** You are running in headless mode.
+1661244406774	Marionette	INFO	Marionette enabled
+1661244406779	Marionette	INFO	Listening on port 59964
+WebDriver BiDi listening on ws://localhost:59949
+Read port: 59964
+1661244406975	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilepBfTNM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59949/devtools/browser/920e1a32-f1a8-4665-86a2-a10b232b8aaf
+1661244554480	Marionette	INFO	Stopped listening on port 59964
+!!! error running onStopped callback: TypeError: callback is not a function
+1661244556687	geckodriver	INFO	Listening on 127.0.0.1:60089
+1661244559797	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "60090" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilebXUpwO"
+*** You are running in headless mode.
+1661244561006	Marionette	INFO	Marionette enabled
+1661244561015	Marionette	INFO	Listening on port 60107
+WebDriver BiDi listening on ws://localhost:60090
+Read port: 60107
+1661244561237	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilebXUpwO\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60090/devtools/browser/a0d58ea3-d68d-4273-b27c-6e7f7c9a5e19
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661244650907	Marionette	INFO	Stopped listening on port 60107
+1661244653567	geckodriver	INFO	Listening on 127.0.0.1:60329
+1661244656679	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "60330" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileNs5WYT"
+*** You are running in headless mode.
+1661244657693	Marionette	INFO	Marionette enabled
+1661244657699	Marionette	INFO	Listening on port 60347
+WebDriver BiDi listening on ws://localhost:60330
+Read port: 60347
+1661244658108	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileNs5WYT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60330/devtools/browser/fbe05825-b49d-493c-9be3-5d2b9b1e00a3
+1661244701792	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1661244703327	geckodriver	INFO	Listening on 127.0.0.1:60409
+1661244706454	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--incognito" "window-size=1920,1080" "--ignore-certificate-errors" "--remote-debugging-port" "60410" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilec3sTHC"
+1661244707337	Marionette	INFO	Marionette enabled
+1661244707345	Marionette	INFO	Listening on port 60425
+WebDriver BiDi listening on ws://localhost:60410
+Read port: 60425
+1661244707603	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilec3sTHC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60410/devtools/browser/e93f6bb4-ec00-48ef-a2e4-462544d29274
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/deposits/sbervklad_a line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661244722081	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1661244723150	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/promo-upravlyai line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661244837915	Marionette	INFO	Stopped listening on port 60425
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+1661246737582	geckodriver	INFO	Listening on 127.0.0.1:52638
+1661246740709	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "52639" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileTerotV"
+*** You are running in headless mode.
+1661246741696	Marionette	INFO	Marionette enabled
+1661246741701	Marionette	INFO	Listening on port 52653
+WebDriver BiDi listening on ws://localhost:52639
+Read port: 52653
+1661246742001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileTerotV\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52639/devtools/browser/9d59c922-a75e-48ea-85c0-3e8ff94bb784
+1661246896864	Marionette	INFO	Stopped listening on port 52653
+!!! error running onStopped callback: TypeError: callback is not a function
+1661246974347	geckodriver	INFO	Listening on 127.0.0.1:52888
+1661246977479	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "52889" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileLCy9p0"
+*** You are running in headless mode.
+1661246978391	Marionette	INFO	Marionette enabled
+1661246978396	Marionette	INFO	Listening on port 52908
+WebDriver BiDi listening on ws://localhost:52889
+Read port: 52908
+1661246978564	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileLCy9p0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52889/devtools/browser/252504a8-7776-4f26-bca3-f060c817afca
+1661247129290	Marionette	INFO	Stopped listening on port 52908
+1661247427915	geckodriver	INFO	Listening on 127.0.0.1:53427
+1661247431001	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "53428" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileal4U2v"
+*** You are running in headless mode.
+1661247431957	Marionette	INFO	Marionette enabled
+1661247431967	Marionette	INFO	Listening on port 53443
+WebDriver BiDi listening on ws://localhost:53428
+Read port: 53443
+1661247432326	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileal4U2v\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53428/devtools/browser/4ca883ed-4173-490a-b4b5-5bbc30998c4d
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1661248296024	Marionette	INFO	Stopped listening on port 53443
+C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "53814" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileedHmtV"
+*** You are running in headless mode.
+1661247888121	Marionette	INFO	Marionette enabled
+1661247888131	Marionette	INFO	Listening on port 53830
+WebDriver BiDi listening on ws://localhost:53814
+Read port: 53830
+1661247888328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileedHmtV\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53814/devtools/browser/c3ee02a7-79bd-4769-a5a0-9a785ffeb27a
+1661247894649	Marionette	INFO	Stopped listening on port 53830
+1661247905537	geckodriver	INFO	Listening on 127.0.0.1:53919
+1661247908649	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "53920" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileHcTx1V"
+*** You are running in headless mode.
+1661247909366	Marionette	INFO	Marionette enabled
+1661247909372	Marionette	INFO	Listening on port 53934
+WebDriver BiDi listening on ws://localhost:53920
+Read port: 53934
+1661247909577	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileHcTx1V\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53920/devtools/browser/e6ae699d-3426-4c02-9c12-9540720cedcf
+1661247915179	Marionette	INFO	Stopped listening on port 53934
+1661248275483	geckodriver	INFO	Listening on 127.0.0.1:54539
+1661248278628	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "54540" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileuVYRSA"
+*** You are running in headless mode.
+1661248279999	Marionette	INFO	Marionette enabled
+1661248280009	Marionette	INFO	Listening on port 54556
+WebDriver BiDi listening on ws://localhost:54540
+Read port: 54556
+1661248280224	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileuVYRSA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54540/devtools/browser/180b34fa-398b-4302-ac07-be489c011fc4
+1661248308483	geckodriver	INFO	Listening on 127.0.0.1:54683
+1661248311593	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--incognito" "window-size=1920,1080" "--ignore-certificate-errors" "--remote-debugging-port" "54684" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilecs8ShP"
+1661248312158	Marionette	INFO	Marionette enabled
+1661248312163	Marionette	INFO	Listening on port 54697
+WebDriver BiDi listening on ws://localhost:54684
+Read port: 54697
+1661248312457	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilecs8ShP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54684/devtools/browser/5cead01d-ee9b-4a02-8166-6f1a05c14c74
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/depositsnew line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661248414287	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.sberbank.ru"
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+console.error: "Unable to find target with innerWindowId:4294967299"
+console.error: "Unable to find target with innerWindowId:4294967299"
+console.error: "Unable to find target with innerWindowId:4294967299"
+console.error: "Unable to find target with innerWindowId:4294967299"
+console.error: "Unable to find target with innerWindowId:4294967299"
+console.error: "Unable to find target with innerWindowId:4294967299"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.sberbank.ru"
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/depositsnew line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661248712459	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+JavaScript error: resource:///actors/ContextMenuChild.jsm, line 569: TypeError: doc is null
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967312"
+console.error: "Unable to find target with innerWindowId:4294967312"
+console.error: "Unable to find target with innerWindowId:4294967312"
+console.error: "Unable to find target with innerWindowId:4294967312"
+console.error: "Unable to find target with innerWindowId:4294967312"
+console.error: "Unable to find target with innerWindowId:4294967312"
+console.error: "Unable to find target with innerWindowId:4294967312"
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/depositsnew line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661249171952	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: resource://devtools/client/inspector/rules/utils/utils.js, line 186: TypeError: rule is undefined
+JavaScript error: resource://devtools/client/inspector/rules/utils/utils.js, line 186: TypeError: rule is undefined
+JavaScript error: resource://devtools/client/inspector/rules/utils/utils.js, line 186: TypeError: rule is undefined
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661250153657	Marionette	INFO	Stopped listening on port 54697
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+[Parent 17624, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 17624, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+ocal\\Temp\\rust_mozprofiletyvUKs"
+*** You are running in headless mode.
+1661249888803	Marionette	INFO	Marionette enabled
+1661249888809	Marionette	INFO	Listening on port 56333
+WebDriver BiDi listening on ws://localhost:56318
+Read port: 56333
+1661249889004	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiletyvUKs\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56318/devtools/browser/f162ff7e-7978-490b-9993-bc2209c4d42a
+1661249894328	Marionette	INFO	Stopped listening on port 56333
+[Parent 1904, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1661249909182	geckodriver	INFO	Listening on 127.0.0.1:56402
+1661249912289	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--incognito" "window-size=1920,1080" "--ignore-certificate-errors" "--remote-debugging-port" "56403" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilelenPYx"
+1661249913202	Marionette	INFO	Marionette enabled
+1661249913207	Marionette	INFO	Listening on port 56418
+WebDriver BiDi listening on ws://localhost:56403
+Read port: 56418
+1661249913451	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilelenPYx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56403/devtools/browser/59a3bfbe-ef98-4b6d-a069-49b290430e83
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/depositsnew line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661249973261	Marionette	INFO	Stopped listening on port 56418
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 9264, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 9264, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1661249976274	geckodriver	INFO	Listening on 127.0.0.1:56594
+1661249979329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--incognito" "window-size=1920,1080" "--ignore-certificate-errors" "--remote-debugging-port" "56595" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilei5xXyJ"
+1661249980438	Marionette	INFO	Marionette enabled
+1661249980449	Marionette	INFO	Listening on port 56613
+WebDriver BiDi listening on ws://localhost:56595
+Read port: 56613
+1661249980793	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilei5xXyJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56595/devtools/browser/3cbc8517-889a-4730-a542-5999f29f26cf
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/depositsnew line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+1661250159406	Marionette	INFO	Stopped listening on port 56613
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 4964, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+mp\\rust_mozprofilexySiDw"
+1661250102230	Marionette	INFO	Marionette enabled
+1661250102238	Marionette	INFO	Listening on port 56807
+WebDriver BiDi listening on ws://localhost:56791
+Read port: 56807
+1661250102505	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilexySiDw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56791/devtools/browser/0f034804-4a9b-4e02-82f5-f5949d92cb25
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/depositsnew line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661250158112	Marionette	INFO	Stopped listening on port 56807
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661250168135	geckodriver	INFO	Listening on 127.0.0.1:57026
+1661250171262	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--incognito" "window-size=1920,1080" "--ignore-certificate-errors" "--remote-debugging-port" "57027" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileIQN1EK"
+1661250172298	Marionette	INFO	Marionette enabled
+1661250172306	Marionette	INFO	Listening on port 57043
+WebDriver BiDi listening on ws://localhost:57027
+Read port: 57043
+1661250172622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileIQN1EK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57027/devtools/browser/0492acaf-fdc6-4897-ae8a-09b18c0697f3
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/depositsnew line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+1661250202510	Marionette	INFO	Stopped listening on port 57043
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661250264395	geckodriver	INFO	Listening on 127.0.0.1:57225
+1661250267542	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--incognito" "window-size=1920,1080" "--ignore-certificate-errors" "--remote-debugging-port" "57226" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileG0WO0S"
+1661250268437	Marionette	INFO	Marionette enabled
+1661250268442	Marionette	INFO	Listening on port 57243
+WebDriver BiDi listening on ws://localhost:57226
+Read port: 57243
+1661250268693	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileG0WO0S\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57226/devtools/browser/7b93a24a-3cda-4066-af9b-1dc2361e85d1
+1661250276618	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://www.sberbank.ru/ru/person/contributions/depositsnew line 311 > injectedScript, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661250284544	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1661250298164	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+1661251031828	Marionette	INFO	Stopped listening on port 57243
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 11360, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+p\\rust_mozprofileRljfQ5"
+1661250404765	Marionette	INFO	Marionette enabled
+1661250404775	Marionette	INFO	Listening on port 57448
+WebDriver BiDi listening on ws://localhost:57432
+Read port: 57448
+1661250405052	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileRljfQ5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57432/devtools/browser/573e2e3d-b199-4d31-ac23-58408cc36053
+1661250414576	Marionette	INFO	Stopped listening on port 57448
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661254448690	geckodriver	INFO	Listening on 127.0.0.1:62233
+1661254451833	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "62234" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilevZUgdo"
+*** You are running in headless mode.
+1661254452674	Marionette	INFO	Marionette enabled
+1661254452679	Marionette	INFO	Listening on port 62249
+WebDriver BiDi listening on ws://localhost:62234
+Read port: 62249
+1661254453016	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilevZUgdo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62234/devtools/browser/bd72063e-5c68-4929-9c75-59338eaf7b02
+1661254461261	Marionette	INFO	Stopped listening on port 62249
+1661254475350	geckodriver	INFO	Listening on 127.0.0.1:62338
+1661254478481	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "62339" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileu2vu7E"
+*** You are running in headless mode.
+1661254479458	Marionette	INFO	Marionette enabled
+1661254479464	Marionette	INFO	Listening on port 62360
+WebDriver BiDi listening on ws://localhost:62339
+Read port: 62360
+1661254479662	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileu2vu7E\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62339/devtools/browser/642f415f-e206-41d1-99c2-5ec762cc2654
+1661254487640	Marionette	INFO	Stopped listening on port 62360
+1661254497606	geckodriver	INFO	Listening on 127.0.0.1:62441
+1661254500709	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "62442" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileamvRYn"
+1661254501696	Marionette	INFO	Marionette enabled
+1661254501701	Marionette	INFO	Listening on port 62460
+WebDriver BiDi listening on ws://localhost:62442
+Read port: 62460
+1661254502035	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileamvRYn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62442/devtools/browser/efce9c7a-6db1-48bf-96fb-0d1075471230
+1661254511447	Marionette	INFO	Stopped listening on port 62460
+[Parent 15128, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:723
+1661255139694	geckodriver	INFO	Listening on 127.0.0.1:63073
+1661255142728	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "63074" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilep1sxOa"
+1661255143057	Marionette	INFO	Marionette enabled
+1661255143062	Marionette	INFO	Listening on port 63092
+WebDriver BiDi listening on ws://localhost:63074
+Read port: 63092
+1661255143236	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilep1sxOa\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63074/devtools/browser/727d066a-3c56-4bfa-a775-fee7c1822add
+1661255175540	Marionette	INFO	Stopped listening on port 63092
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661255177561	geckodriver	INFO	Listening on 127.0.0.1:63187
+1661255180600	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "63188" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileVifN3K"
+1661255180921	Marionette	INFO	Marionette enabled
+1661255180925	Marionette	INFO	Listening on port 63200
+WebDriver BiDi listening on ws://localhost:63188
+Read port: 63200
+1661255181103	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileVifN3K\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63188/devtools/browser/7314fe9f-9e89-4582-b354-93e34890d789
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661255239639	Marionette	INFO	Stopped listening on port 63200
+1661255287408	geckodriver	INFO	Listening on 127.0.0.1:63407
+1661255290438	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "63408" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile5OkD4i"
+1661255290754	Marionette	INFO	Marionette enabled
+1661255290758	Marionette	INFO	Listening on port 63428
+WebDriver BiDi listening on ws://localhost:63408
+Read port: 63428
+1661255290930	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile5OkD4i\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63408/devtools/browser/db599d80-3bf8-4352-a865-f5be8c0c3336
+1661255329947	Marionette	INFO	Stopped listening on port 63428
+1661255351745	geckodriver	INFO	Listening on 127.0.0.1:63549
+1661255354762	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "63550" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile2yMdoH"
+1661255355083	Marionette	INFO	Marionette enabled
+1661255355088	Marionette	INFO	Listening on port 63568
+WebDriver BiDi listening on ws://localhost:63550
+Read port: 63568
+1661255355256	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile2yMdoH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63550/devtools/browser/4becf2cb-7cd5-4ac6-b9a4-be7e0618e825
+1661255397992	Marionette	INFO	Stopped listening on port 63568
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661255454255	geckodriver	INFO	Listening on 127.0.0.1:63698
+1661255457302	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "63699" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilewNkqiJ"
+1661255457632	Marionette	INFO	Marionette enabled
+1661255457637	Marionette	INFO	Listening on port 63722
+WebDriver BiDi listening on ws://localhost:63699
+Read port: 63722
+1661255457810	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilewNkqiJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63699/devtools/browser/44955201-bb97-4a85-9d19-6c7f21e98296
+1661255506096	Marionette	INFO	Stopped listening on port 63722
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661255576792	geckodriver	INFO	Listening on 127.0.0.1:63962
+1661255579840	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "63963" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileVv1AvG"
+1661255580172	Marionette	INFO	Marionette enabled
+1661255580177	Marionette	INFO	Listening on port 63980
+WebDriver BiDi listening on ws://localhost:63963
+Read port: 63980
+1661255580347	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileVv1AvG\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63963/devtools/browser/87747b7e-f3e6-4ae5-8e61-d28ff2774984
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1661256600326	Marionette	INFO	Stopped listening on port 63980
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+e=1920,1080" "--remote-debugging-port" "64209" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile7xtws1"
+1661255727726	Marionette	INFO	Marionette enabled
+1661255727730	Marionette	INFO	Listening on port 64221
+WebDriver BiDi listening on ws://localhost:64209
+Read port: 64221
+1661255727909	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile7xtws1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64209/devtools/browser/ab0b7003-d957-45bf-908d-a3b85a960a44
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661256600448	Marionette	INFO	Stopped listening on port 64221
+tening on port 64652
+WebDriver BiDi listening on ws://localhost:64636
+Read port: 64652
+1661256026376	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilekLIKIZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64636/devtools/browser/f9884210-d937-4fc6-a7cb-ec2d7bcd63d3
+1661256033859	Marionette	INFO	Stopped listening on port 64652
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661256041276	geckodriver	INFO	Listening on 127.0.0.1:64732
+1661256044315	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64733" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileAyLT7Y"
+1661256044640	Marionette	INFO	Marionette enabled
+1661256044644	Marionette	INFO	Listening on port 64757
+WebDriver BiDi listening on ws://localhost:64733
+Read port: 64757
+1661256044819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileAyLT7Y\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64733/devtools/browser/6a41efe2-8e7e-408e-8bd4-3dd8a314d46d
+1661256600321	Marionette	INFO	Stopped listening on port 64757
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64833" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileWcdU34"
+1661256068550	Marionette	INFO	Marionette enabled
+1661256068556	Marionette	INFO	Listening on port 64851
+Read port: 64851
+WebDriver BiDi listening on ws://localhost:64833
+1661256068736	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileWcdU34\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64833/devtools/browser/fa0829c8-5d25-4810-9a44-4fb8a6719fba
+1661256111319	Marionette	INFO	Stopped listening on port 64851
+1661256267319	geckodriver	INFO	Listening on 127.0.0.1:65121
+1661256270436	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "65122" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileL2yU8l"
+1661256270759	Marionette	INFO	Marionette enabled
+1661256270763	Marionette	INFO	Listening on port 65147
+WebDriver BiDi listening on ws://localhost:65122
+Read port: 65147
+1661256270936	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileL2yU8l\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65122/devtools/browser/91381092-d97e-4973-9329-7e4c6215f739
+1661256600316	Marionette	INFO	Stopped listening on port 65147
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "65228" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile4Alw37"
+1661256323568	Marionette	INFO	Marionette enabled
+1661256323573	Marionette	INFO	Listening on port 65246
+WebDriver BiDi listening on ws://localhost:65228
+Read port: 65246
+1661256323745	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile4Alw37\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65228/devtools/browser/0f477a62-214b-4c3c-b93a-a0942e834b8d
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661256600446	Marionette	INFO	Stopped listening on port 65246
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 107: Error: Connection closed, pending request to server0.conn0.windowGlobal4294967300/domnode233, type setNodeValue failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:293:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:49:19
+showTextEditor/done/</<@resource://devtools/client/inspector/markup/views/text-editor.js:101:25
+do@resource://devtools/client/shared/undo.js:70:16
+endBatch@resource://devtools/client/shared/undo.js:81:11
+do@resource://devtools/client/shared/undo.js:93:10
+showTextEditor/done/<@resource://devtools/client/inspector/markup/views/text-editor.js:99:31
+
+1661256617003	geckodriver	INFO	Listening on 127.0.0.1:49285
+1661256620081	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "49286" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiledcbvzg"
+1661256620433	Marionette	INFO	Marionette enabled
+1661256620438	Marionette	INFO	Listening on port 49303
+WebDriver BiDi listening on ws://localhost:49286
+Read port: 49303
+1661256620666	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiledcbvzg\\search.json.mozlz4", (void 0)))
+1661256622191	Marionette	INFO	Stopped listening on port 49303
+1661256622200	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661256636805	geckodriver	INFO	Listening on 127.0.0.1:49377
+1661256639837	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "49378" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilexC2ie7"
+1661256640196	Marionette	INFO	Marionette enabled
+1661256640202	Marionette	INFO	Listening on port 49399
+WebDriver BiDi listening on ws://localhost:49378
+Read port: 49399
+1661256640409	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilexC2ie7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49378/devtools/browser/d97db3d7-c7c5-4bb2-b5bf-1ed7986cc3cc
+1661256753507	Marionette	INFO	Stopped listening on port 49399
+1661256816850	geckodriver	INFO	Listening on 127.0.0.1:49620
+1661256819907	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "49621" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilel0wUXI"
+1661256820251	Marionette	INFO	Marionette enabled
+1661256820256	Marionette	INFO	Listening on port 49636
+WebDriver BiDi listening on ws://localhost:49621
+Read port: 49636
+1661256820464	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilel0wUXI\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49621/devtools/browser/20b6514a-a59a-4a0d-bae3-64f67120e9d4
+1661256822586	Marionette	INFO	Stopped listening on port 49636
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661258006546	geckodriver	INFO	Listening on 127.0.0.1:52034
+1661258009637	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "52035" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileBZaVCH"
+*** You are running in headless mode.
+1661258009959	Marionette	INFO	Marionette enabled
+1661258009963	Marionette	INFO	Listening on port 52050
+WebDriver BiDi listening on ws://localhost:52035
+Read port: 52050
+1661258010059	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileBZaVCH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52035/devtools/browser/2f5d8ac9-862d-4b62-8d12-eeaa469f1733
+1661258222733	Marionette	INFO	Stopped listening on port 52050
+1661258223944	geckodriver	INFO	Listening on 127.0.0.1:52457
+1661258227007	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "52458" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilevyxCms"
+*** You are running in headless mode.
+1661258227347	Marionette	INFO	Marionette enabled
+1661258227351	Marionette	INFO	Listening on port 52476
+WebDriver BiDi listening on ws://localhost:52458
+Read port: 52476
+1661258227613	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilevyxCms\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52458/devtools/browser/07e55f50-ef2a-460a-822b-65233969640f
+1661258231452	Marionette	INFO	Stopped listening on port 52476
+[Parent 10208, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1661258232779	geckodriver	INFO	Listening on 127.0.0.1:52519
+1661258235837	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "52520" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilew7OXqF"
+1661258236165	Marionette	INFO	Marionette enabled
+1661258236169	Marionette	INFO	Listening on port 52533
+WebDriver BiDi listening on ws://localhost:52520
+Read port: 52533
+1661258236346	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilew7OXqF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52520/devtools/browser/425a1853-5d49-4829-9637-9cf28694f26d
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661258352454	Marionette	INFO	Stopped listening on port 52533
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+1661258618370	geckodriver	INFO	Listening on 127.0.0.1:53234
+1661258621461	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "53235" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileMRSJYJ"
+*** You are running in headless mode.
+1661258621783	Marionette	INFO	Marionette enabled
+1661258621787	Marionette	INFO	Listening on port 53252
+WebDriver BiDi listening on ws://localhost:53235
+Read port: 53252
+1661258621877	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileMRSJYJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53235/devtools/browser/f13cc055-b606-408a-a4b6-8782e5d29dbe
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661258680718	Marionette	INFO	Stopped listening on port 53252
+1661259051908	geckodriver	INFO	Listening on 127.0.0.1:53748
+1661259054971	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53749" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileZf68W5"
+1661259055314	Marionette	INFO	Marionette enabled
+1661259055318	Marionette	INFO	Listening on port 53764
+WebDriver BiDi listening on ws://localhost:53749
+Read port: 53764
+1661259055487	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileZf68W5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53749/devtools/browser/7a837bc4-a92f-4f83-8873-3ef888598022
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661259065594	Marionette	INFO	Stopped listening on port 53764
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661259070761	geckodriver	INFO	Listening on 127.0.0.1:53873
+1661259073840	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "53874" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileUL4gIC"
+*** You are running in headless mode.
+1661259074162	Marionette	INFO	Marionette enabled
+1661259074166	Marionette	INFO	Listening on port 53892
+WebDriver BiDi listening on ws://localhost:53874
+Read port: 53892
+1661259074257	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileUL4gIC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53874/devtools/browser/5f23a160-5348-4f2a-a9b9-71ba41b14c30
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661259100063	geckodriver	INFO	Listening on 127.0.0.1:53986
+1661259103118	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53987" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiletWjid7"
+1661259103446	Marionette	INFO	Marionette enabled
+1661259103451	Marionette	INFO	Listening on port 54001
+WebDriver BiDi listening on ws://localhost:53987
+Read port: 54001
+1661259103626	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiletWjid7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53987/devtools/browser/70c2d20a-2de9-446b-9463-aa676c30fa89
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1661264699079	Marionette	INFO	Stopped listening on port 54001
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+e=1920,1080" "--remote-debugging-port" "54543" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileB414Na"
+1661259470993	Marionette	INFO	Marionette enabled
+1661259470999	Marionette	INFO	Listening on port 54559
+Read port: 54559
+WebDriver BiDi listening on ws://localhost:54543
+1661259471176	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileB414Na\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54543/devtools/browser/8f4ac51a-0480-49a0-b254-fd5be29244f3
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661259508204	Marionette	INFO	Stopped listening on port 54559
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661259515596	geckodriver	INFO	Listening on 127.0.0.1:54782
+1661259518654	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "54783" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileHTcKX6"
+1661259518980	Marionette	INFO	Marionette enabled
+1661259518985	Marionette	INFO	Listening on port 54804
+WebDriver BiDi listening on ws://localhost:54783
+Read port: 54804
+1661259519159	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileHTcKX6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54783/devtools/browser/cec85dad-ca99-4599-9149-228bcef5f856
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661259585222	Marionette	INFO	Stopped listening on port 54804
+1661259676488	geckodriver	INFO	Listening on 127.0.0.1:55160
+1661259679542	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "55161" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilehEaSHU"
+1661259679862	Marionette	INFO	Marionette enabled
+1661259679868	Marionette	INFO	Listening on port 55179
+WebDriver BiDi listening on ws://localhost:55161
+Read port: 55179
+1661259680045	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilehEaSHU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55161/devtools/browser/82df1ba4-7a17-4fa6-b69f-8add86e1f718
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661259745900	Marionette	INFO	Stopped listening on port 55179
+1661265275014	geckodriver	INFO	Listening on 127.0.0.1:63309
+1661265278100	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "63310" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileCQ2r0p"
+*** You are running in headless mode.
+1661265278416	Marionette	INFO	Marionette enabled
+1661265278420	Marionette	INFO	Listening on port 63322
+WebDriver BiDi listening on ws://localhost:63310
+Read port: 63322
+1661265278510	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileCQ2r0p\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63310/devtools/browser/0e0858ab-5bef-4704-8eba-8795ec2fb00b
+1661265293352	Marionette	INFO	Stopped listening on port 63322
+1661265304296	geckodriver	INFO	Listening on 127.0.0.1:63419
+1661265307357	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "63420" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileCWEQnF"
+1661265307678	Marionette	INFO	Marionette enabled
+1661265307683	Marionette	INFO	Listening on port 63433
+WebDriver BiDi listening on ws://localhost:63420
+Read port: 63433
+1661265307865	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileCWEQnF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63420/devtools/browser/8d19a345-032e-4381-82e6-6a04878a488c
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661265538658	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1661265861305	Marionette	INFO	Stopped listening on port 63433
+[Parent 3764, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1661265880209	geckodriver	INFO	Listening on 127.0.0.1:64124
+1661265883290	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64125" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileAdr6sr"
+1661265883630	Marionette	INFO	Marionette enabled
+1661265883635	Marionette	INFO	Listening on port 64150
+WebDriver BiDi listening on ws://localhost:64125
+Read port: 64150
+1661265883807	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileAdr6sr\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64125/devtools/browser/d76c8102-3acf-4e1c-a50d-364c21bbef91
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661265892343	Marionette	INFO	Stopped listening on port 64150
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661265895798	geckodriver	INFO	Listening on 127.0.0.1:64249
+1661265898861	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64250" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilepF4mry"
+1661265899188	Marionette	INFO	Marionette enabled
+1661265899192	Marionette	INFO	Listening on port 64263
+WebDriver BiDi listening on ws://localhost:64250
+Read port: 64263
+1661265899361	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilepF4mry\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64250/devtools/browser/d924ac10-dce2-4d6a-a15b-f569aa6c32ec
+1661265925615	Marionette	INFO	Stopped listening on port 64263
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661265927258	geckodriver	INFO	Listening on 127.0.0.1:64351
+1661265930324	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64352" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileQdsaiM"
+1661265930646	Marionette	INFO	Marionette enabled
+1661265930650	Marionette	INFO	Listening on port 64366
+WebDriver BiDi listening on ws://localhost:64352
+Read port: 64366
+1661265930822	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileQdsaiM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64352/devtools/browser/281ff912-a139-4c38-9c60-e59e88e56471
+1661265962535	Marionette	INFO	Stopped listening on port 64366
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661265964773	geckodriver	INFO	Listening on 127.0.0.1:64488
+1661265967840	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64489" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile0uPUBj"
+1661265968164	Marionette	INFO	Marionette enabled
+1661265968169	Marionette	INFO	Listening on port 64506
+WebDriver BiDi listening on ws://localhost:64489
+Read port: 64506
+1661265968341	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile0uPUBj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64489/devtools/browser/8ce03cfd-e4bc-4525-8b55-222ff23e4c3d
+1661266000397	Marionette	INFO	Stopped listening on port 64506
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661266001892	geckodriver	INFO	Listening on 127.0.0.1:64611
+1661266004954	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64612" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilegqUhCs"
+1661266005277	Marionette	INFO	Marionette enabled
+1661266005282	Marionette	INFO	Listening on port 64626
+WebDriver BiDi listening on ws://localhost:64612
+Read port: 64626
+1661266005464	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilegqUhCs\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64612/devtools/browser/05d6b19c-f800-48ce-b0ef-a9348d8614ab
+1661266014082	Marionette	INFO	Stopped listening on port 64626
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661266018085	geckodriver	INFO	Listening on 127.0.0.1:64701
+1661266021157	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64702" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileqWNmNp"
+1661266021476	Marionette	INFO	Marionette enabled
+1661266021481	Marionette	INFO	Listening on port 64728
+WebDriver BiDi listening on ws://localhost:64702
+Read port: 64728
+1661266021658	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileqWNmNp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64702/devtools/browser/38dd2810-e29f-4b88-b51e-6065e8841861
+1661266054781	geckodriver	INFO	Listening on 127.0.0.1:64815
+1661266057852	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64816" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile4jFWGO"
+1661266058174	Marionette	INFO	Marionette enabled
+1661266058179	Marionette	INFO	Listening on port 64833
+WebDriver BiDi listening on ws://localhost:64816
+Read port: 64833
+1661266058357	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile4jFWGO\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64816/devtools/browser/5912d7dc-4449-40eb-9088-ca54d61e3847
+1661266067599	Marionette	INFO	Stopped listening on port 64833
+1661266203958	geckodriver	INFO	Listening on 127.0.0.1:65107
+1661266207039	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "65108" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile335fWR"
+1661266207367	Marionette	INFO	Marionette enabled
+1661266207372	Marionette	INFO	Listening on port 65122
+Read port: 65122
+WebDriver BiDi listening on ws://localhost:65108
+1661266207544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile335fWR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65108/devtools/browser/9e16e15f-f0c3-4047-b842-353b90ff5a87
+1661266218282	Marionette	INFO	Stopped listening on port 65122

@@ -3,6 +3,7 @@ import openpyxl
 import warnings
 import sys
 import os
+from datetime import date
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium import webdriver
@@ -10,6 +11,23 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common import action_chains
+
+
+def vrb_premium_write(driver, active_sheet, row_f):
+    driver.get('https://private.vtb.ru/our-solutions/classical-services/vklady')
+    main = driver.find_element(By.CLASS_NAME, 'mw')
+    boxes = main.find_elements(By.CSS_SELECTOR, '.fh-item')
+    for box in boxes:
+        text = box.text.split('\n')
+        active_sheet[f'A{row_f}'] = text[0]
+        active_sheet[f'B{row_f}'] = text[3]
+        active_sheet[f'C{row_f}'] = text[1]
+        active_sheet[f'D{row_f}'] = text[5]
+        active_sheet[f'A{row_f + 1}'] = text[7]
+        active_sheet[f'B{row_f + 1}'] = text[4]
+        active_sheet[f'C{row_f + 1}'] = text[2]
+        active_sheet[f'D{row_f + 1}'] = text[6]
+        row_f += 3
 
 
 def max_perc(percents):
@@ -36,6 +54,11 @@ def vtb_write(driver: webdriver, active_sheet, row_f, hrefs):
     и выводит ошибку (обычно элемент будет просто пустой). Остальное вроде понятно, хотя ВТБ иногда меняет названия
     классов (CSS_SELECTOR). Возможно, мне просто показалось, но такое вроде как уже случалось.
     """
+    for p in range(len(hrefs)):
+        if 'vklad-v-buduschee' in hrefs[p]:
+            hrefs[0], hrefs[p] = hrefs[p], hrefs[0]
+        elif 'vklad-bolshie-vozmozhnosti' in hrefs[p]:
+            hrefs[1], hrefs[p] = hrefs[p], hrefs[1]
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     class_1 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.hVDbVT.info-line-itemstyles__Title-info-line-item__sc-gswh8c-1.egXuTZ'
     class_2 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.kOPQGR.hero-blockstyles__Heading1Styled-hero-block__sc-124m6ob-3.klzwby'
@@ -147,7 +170,7 @@ def vtb_write(driver: webdriver, active_sheet, row_f, hrefs):
             except Exception as e:
                 exc_type, exc_obj, exc_tb = sys.exc_info()
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                print(e, exc_type, fname, exc_tb.tb_lineno)
+                # print(e, exc_type, fname, exc_tb.tb_lineno)
                 time.sleep(1)
 
 
@@ -213,11 +236,13 @@ if __name__ == '__main__':
     # service=Service(ChromeDriverManager().install())
     browser = webdriver.Firefox(executable_path=PATH, options=options)
 
-    wb = openpyxl.open('testing.xlsx')
-    sheet = wb.worksheets[1]
+    wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
+    sheet = wb.worksheets[2]
+    sheet_1 = wb.worksheets[3]
     """В строчке 146 в квадратных скобках указывается номер листа эксель файла.
     Название можно поменять, но и тогда название файла поменяйте."""
     row = 1
     vtb_write(browser, sheet, row, get_hrefs_vtb(browser))
+    vrb_premium_write(browser, sheet_1, row)
     browser.quit()
-    wb.save('testing.xlsx')
+    wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')

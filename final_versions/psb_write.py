@@ -4,6 +4,7 @@ import sys
 import os
 import warnings
 import openpyxl
+from datetime import date
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
@@ -203,8 +204,8 @@ def psb_write(driver, active_sheet, row_f):
 
 
 if __name__ == '__main__':
-    wb = openpyxl.open('testing.xlsx')
-    sheet = wb.worksheets[9]
+    wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
+    sheet = wb.worksheets[12]
 
     warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
@@ -229,5 +230,5 @@ if __name__ == '__main__':
         print(exc_type, fname, exc_tb.tb_lineno)
         print(e)
     finally:
-        wb.save('testing.xlsx')
+        wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')
         browser.quit()

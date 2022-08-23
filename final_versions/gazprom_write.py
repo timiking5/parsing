@@ -1,6 +1,7 @@
 import time
 import warnings
 import openpyxl
+from datetime import date
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
@@ -143,6 +144,7 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
     :param row_f:
     :return:
     """
+    global extra
     hrefs = ['https://www.gazprombank.ru/personal/increase/deposits/detail/2491',
              'https://www.gazprombank.ru/personal/increase/deposits/detail/1929']
     ammounts = ['500000', '1000000', '2000000', '3000000',
@@ -164,8 +166,10 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
                 )  # .chips_tag_group_root__tag--c5c08
                 buttons = main.find_elements(By.CSS_SELECTOR, '.chips_tag_root--3b499')
                 if buttons:
+                    active_sheet[f'A{row_f - 1}'] = main.find_element(By.TAG_NAME, 'h1').text
                     break
                 time.sleep(1)
+
             for i in range(len(buttons)):
                 active_sheet[f'{chr(col + i)}{row_f - 1}'] = buttons[i].text
             for j in range(7):
@@ -181,6 +185,8 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
                     EC.presence_of_element_located((By.CLASS_NAME, "nr-layout"))
                 )
             buttons_2 = main.find_elements(By.CSS_SELECTOR, '.nr-tabs__el--inner')
+            online = main.find_elements(By.CSS_SELECTOR, '.calculator_discounts_root__rate--4c105')[1].text
+            active_sheet[f"J{extra}"] = "надбавка за онлайн банк " + online
             for button in buttons_2:
                 if 'Условия по вкладу' in button.text:
                     press_button(driver, button)
@@ -195,11 +201,12 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
                 if 'Премиальным' in elem.text:
                     txt = elem.text.split()
                     prem = txt[len(txt) - 1]
-                    active_sheet['J29'] = elem.text
+                    active_sheet[f'J{extra + 1}'] = elem.text
+                    extra += 8
                     
             for j in range(7):
                 for i in range(len(buttons)):
-                    active_sheet[f'{chr(col + i + 9)}{row_f - j - 1}'] = sum_proc(active_sheet[f'{chr(col + i)}{row_f - j - 1}'].value, prem)
+                    active_sheet[f'{chr(col + i + 12)}{row_f - j - 1}'] = sum_proc(active_sheet[f'{chr(col + i)}{row_f - j - 1}'].value, prem)
         except Exception as e:
             print(e)
 
@@ -207,23 +214,26 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
     return row_f
 
 
+extra = 6
+
 if __name__ == '__main__':
     PATH = "C:\\Program Files (x86)\\geckodriver.exe"
     warnings.filterwarnings("ignore")
+
 
     options = webdriver.FirefoxOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
 
     row = 3
-    wb = openpyxl.open('testing.xlsx')
-    sheet = wb.worksheets[3]
+    wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
+    sheet = wb.worksheets[5]
 
     browser = webdriver.Firefox(executable_path=PATH, options=options)
-
+    # browser.get("https://www.gazprombank.ru/personal/increase/deposits/detail/2491")
     row = gazprom_write(browser, sheet, row)
     take_tables(browser, sheet, row)
     browser.quit()
-    wb.save('testing.xlsx')
+    wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')

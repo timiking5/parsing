@@ -1,6 +1,7 @@
 import time
 import openpyxl
 import warnings
+from datetime import date
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 # from selenium.common.exceptions import NoSuchElementException
@@ -24,25 +25,29 @@ def write_prem(driver: webdriver, active_sheet, row_f):
              'https://www.rshb.ru/natural/premium/ultra/deposit-komfortniy/']
     for k in range(len(hrefs)):
         driver.get(hrefs[k])
-        print(f"    proccessing {k + 4}/6...")
-        driver.execute_script(f"window.scrollBy(0, {1000})")
+        print(f"    proccessing {k + 5}/7...")
+        driver.execute_script(f"window.scrollBy(0, {900})")
         time.sleep(1)
         main = driver.find_element(By.CLASS_NAME, 'rshb-layout')
-        buttons = main.find_elements(By.CLASS_NAME, 'accordion__header')
-        for button in buttons:
-            if "капитализ" in button.text.lower():
-                button.click()
-                break
 
-        rows = main.find_elements(By.TAG_NAME, 'table')[1].find_elements(By.TAG_NAME, 'tr')
-        active_sheet[f'A{row_f}'] = main.find_element(By.TAG_NAME, 'h1').text
-        row_f += 1
-        for i in range(len(rows)):
-            tds = rows[i].find_elements(By.TAG_NAME, 'td')
-            for j in range(len(tds)):
-                active_sheet[f'{chr(65 + j)}{row_f}'] = tds[j].text
+        buttons_curr = main.find_elements(By.CSS_SELECTOR, '.js-tabs')
+        for s in range(len(buttons_curr)):
+            buttons_curr[s].click()
+            buttons = main.find_elements(By.CLASS_NAME, 'accordion__header')
+            for button in buttons:
+                if "капитализ" in button.text.lower():
+                    button.click()
+                    break
+
+            rows = main.find_elements(By.TAG_NAME, 'table')[1 + s * 2].find_elements(By.TAG_NAME, 'tr')
+            active_sheet[f'A{row_f}'] = main.find_element(By.TAG_NAME, 'h1').text
             row_f += 1
-        row_f += 1
+            for i in range(len(rows)):
+                tds = rows[i].find_elements(By.TAG_NAME, 'td')
+                for j in range(len(tds)):
+                    active_sheet[f'{chr(65 + j)}{row_f}'] = tds[j].text
+                row_f += 1
+            row_f += 1
 
 
 def use_bar(main: WebElement, request):
@@ -78,7 +83,7 @@ def write_rshb(driver: webdriver, active_sheet, row_f):
     amounts = ['500000', '1000000', '2000000', '3000000',
                '5000000', '10000000', '20000000']
     for href in hrefs:
-        print(f"    proccessing 3/6...")
+        print(f"    proccessing 4/7...")
         driver.get(href)
         browser.execute_script(f"window.scrollBy(0, {600})")
         time.sleep(1)
@@ -107,43 +112,54 @@ def write_rshb_tables(driver: webdriver, active_sheet, row_f):
     :return:
     """
     hrefs = ['https://www.rshb.ru/natural/deposits/popolnaemiy/',
-             'https://www.rshb.ru/natural/deposits/komfortniy/']
+             'https://www.rshb.ru/natural/deposits/komfortniy/',
+             'https://www.rshb.ru/natural/deposits/called/']
     for k in range(len(hrefs)):
         driver.get(hrefs[k])
-        print(f"    proccessing {k + 1}/6...")
+        print(f"    proccessing {k + 1}/7...")
         main = driver.find_element(By.CSS_SELECTOR, '.page')
         name = main.find_element(By.TAG_NAME, 'h1')
         table = main.find_element(By.TAG_NAME, 'table')
         trs = table.find_elements(By.TAG_NAME, 'tr')  # Ряды таблицы - table rows
-
         active_sheet[f'A{row_f}'] = name.text
-        row_f += 1
-        for i in range(len(trs)):
-            tds = trs[i].find_elements(By.TAG_NAME, 'td')
-            if i == 0:
-                active_sheet[f'A{row_f}'] = tds[0].text
-                continue
-            elif i == 1:
-                for j in range(len(tds)):
-                    active_sheet[f'{chr(66 + j)}{row_f}'] = tds[j].text
-            else:
-                for j in range(len(tds)):
-                    active_sheet[f'{chr(65 + j)}{row_f}'] = tds[j].text
+        if k != 2:
+
             row_f += 1
-        row_f += 1
+            for i in range(len(trs)):
+                tds = trs[i].find_elements(By.TAG_NAME, 'td')
+                if i == 0:
+                    active_sheet[f'A{row_f}'] = tds[0].text
+                    continue
+                elif i == 1:
+                    for j in range(len(tds)):
+                        active_sheet[f'{chr(66 + j)}{row_f}'] = tds[j].text
+                else:
+                    for j in range(len(tds)):
+                        active_sheet[f'{chr(65 + j)}{row_f}'] = tds[j].text
+                row_f += 1
+            row_f += 1
+        else:
+            for i in range(len(trs)):
+                tds = trs[i].find_elements(By.TAG_NAME, 'td')
+                if not tds:
+                    tds = trs[i].find_elements(By.TAG_NAME, 'tr')
+                for j in range(len(tds)):
+                    active_sheet[f'{chr(65 + j)}{row_f}'] = tds[j].text + "%"
+                row_f += 1
+            row_f += 1
     return row_f
 
 
 if __name__ == '__main__':
-    wb = openpyxl.open('testing.xlsx')
-    sheet = wb.worksheets[7]
-    sheet_1 = wb.worksheets[8]
+    wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
+    sheet = wb.worksheets[10]
+    sheet_1 = wb.worksheets[11]
 
     warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
 
     options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
     options.add_argument('--ignore-certificate-errors')
@@ -155,5 +171,5 @@ if __name__ == '__main__':
     row = write_rshb_tables(browser, sheet, row)
     write_rshb(browser, sheet, row)
     write_prem(browser, sheet_1, 1)
-    wb.save('testing.xlsx')
+    wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')
     browser.quit()
