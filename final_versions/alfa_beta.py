@@ -25,6 +25,7 @@ def alfa_write_curr(driver, active_table, row_f):
     time.sleep(3)
     # driver.execute_script(f"window.scrollBy(0, {800})")
     # time.sleep(1)
+    currency = ['Доллары', 'Евро']
     char = ['$', '€']
     bar_selector = '.input__input_bmmfk.input__hasLabel_bmmfk.amount-input__input_1udd5'
     amounts = ["1000", "25000", "50000", "100000", "300000"]
@@ -41,6 +42,8 @@ def alfa_write_curr(driver, active_table, row_f):
 
         bar = main.find_elements(By.CSS_SELECTOR, bar_selector)[k - 1]
 
+        active_table[f'A{row_f}'] = currency[k - 2]
+        active_table[f'K{row_f}'] = currency[k - 2]
         for i in range(len(buttons)):
             active_table[f'{chr(66 + i)}{row_f}'] = buttons[i].text
             active_table[f'{chr(76 + i)}{row_f}'] = buttons[i].text
@@ -131,8 +134,8 @@ def find_percent(main: WebElement):
 
 if __name__ == '__main__':
     wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
-    table = wb.worksheets[8]
-    table_1 = wb.worksheets[9]
+    table = wb.worksheets[9]
+    table_1 = wb.worksheets[10]
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
     warnings.filterwarnings("ignore")
 
@@ -144,11 +147,10 @@ if __name__ == '__main__':
 
     browser = webdriver.Chrome(executable_path=PATH, chrome_options=options)
 
-    browser.get('https://alfabank.ru/make-money/deposits/alfa/')
     row = 2
     print("    proccesing 1/3...")
     alfa_write(browser, table, row)
     alfa_write_curr(browser, table_1, row)
-    #
+
     browser.quit()
     wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')

@@ -17,5 +17,7 @@ echo running sber_write
 python sber_write.py
 echo running alfa_write
 python alfa_beta.py
+echo running take_and_write
+python take_and_write.py
 pause
 

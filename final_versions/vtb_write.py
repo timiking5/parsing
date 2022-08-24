@@ -13,7 +13,210 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common import action_chains
 
 
-def vrb_premium_write(driver, active_sheet, row_f):
+def vtb_premium_write(driver: webdriver, active_sheet, row_f):
+    hrefs = ["https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/",
+             "https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/"]
+
+    ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
+    # class_1 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.hVDbVT.info-line-itemstyles__Title-info-line-item__sc-gswh8c-1.egXuTZ'
+    class_2 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.kOPQGR.hero-blockstyles__Heading1Styled-hero-block__sc-124m6ob-3.klzwby'
+    class_3 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.jEFSaq.numbersstyles__TypographyTitle-foundation-kit__sc-1xhbrzd-4.haHdlc'
+    class_4 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.gGALTE.markdown-headingstyles__HeadingTypography-foundation-kit__sc-7uz79g-0.frxXnP'
+    class_5 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.bIbiHl.table-cellstyles__HeadingTypography-table-cell__sc-pq68xl-2.eMAckD'
+    class_6 = '.typographystyles__Box-foundation-kit__sc-14qzghz-0.jEFSaq.numbersstyles__TypographyTitle-foundation-kit__sc-1xhbrzd-4.gzXcLP'
+    #         ".typographystyles__Box-foundation-kit__sc-14qzghz-0.bIbiHl.table-cellstyles__HeadingTypography-table-cell__sc-pq68xl-2.eMAckD"
+    for k in range(len(hrefs)):
+        driver.get(hrefs[k])
+        for _ in range(5):
+            try:
+                main = WebDriverWait(driver, 10).until(
+                            EC.presence_of_element_located((By.ID, "root"))
+                        )
+                account_name = main.find_element(By.CSS_SELECTOR, class_2)
+                if account_name:
+                    if 'Вклад в будущее' in account_name.text:
+                        row_f += 1
+                        active_sheet[f'A{row_f}'] = account_name.text
+                        row_f += 1
+                        percents = main.find_elements(By.CSS_SELECTOR, class_3)
+                        if not percents:
+                            percents = main.find_elements(By.CSS_SELECTOR, class_6)
+                        percents = [i for i in percents if i.text != '']
+                        rows = main.find_elements(By.CSS_SELECTOR, class_4)
+                        rows = [rw for rw in rows if rw.text != '']
+                        headers = main.find_elements(By.CSS_SELECTOR, class_5)
+                        headers = [header for header in headers if header.text != '']
+                        for i in range(len(headers)):
+                            active_sheet[f'{chr(65 + i)}{row_f}'] = headers[i].text
+                        row_f += 1
+                        print(len(headers), len(rows), len(percents))
+                        for i in range(len(rows)):
+                            active_sheet[f'A{row_f}'] = rows[i].text
+                            for j in range(len(headers) - 1):
+
+                                active_sheet[f'{chr(66 + j)}{row_f}'] = percents[(len(headers) - 1) * i + j].text
+                                # Обращаемся с одномерным списком, как с двумерным
+                                # При том "ширина" таблицы процентов на 1 меньше длины заголовков (см. сайт)
+                            row_f += 1
+                    elif "Большие возможности" in account_name.text:
+                        row_f += 1
+                        active_sheet[f'A{row_f}'] = account_name.text
+                        row_f += 1
+                        for c in [0, 1]:
+                            time.sleep(2)
+                            rows = main.find_elements(By.CSS_SELECTOR, class_4)
+                            rows = [i for i in rows if i.text != '']
+                            headers = main.find_elements(By.CSS_SELECTOR, class_5)
+                            headers = [i for i in headers if i.text != '']
+                            percents = main.find_elements(By.CSS_SELECTOR, class_6)
+                            percents = [i for i in percents if i.text != '']
+                            for i in range(len(headers)):
+                                active_sheet[f'A{row_f}'] = headers[i].text
+                            row_f += 1
+                            for i in range(len(rows)):
+                                active_sheet[f'A{row_f}'] = rows[i].text
+                                for j in range(len(headers) - 1):
+                                    active_sheet[f'{chr(66 + j)}{row_f}'] = percents[i * (len(headers) - 1) + j].text
+                                row_f += 1
+                            if c == 0:
+                                driver.execute_script(f"window.scrollBy(0, {650})")
+                                time.sleep(3)
+                                buttons = main.find_elements(By.CSS_SELECTOR, '.tabs-headerstyles__TabTitleHorizontal-foundation-kit__sc-1w1sfys-2.fxYqKy')
+                                for button in buttons:
+                                    if "Доход" in button.text:
+                                        button.click()
+                                        time.sleep(1)
+                                        break
+                                continue
+                        row_f += 1
+
+                    elif "Управляемый" in account_name.text:
+                        row_f += 1
+                        active_sheet[f'A{row_f}'] = account_name.text
+                        active_sheet[f'B{row_f}'] = "Если снимать"
+                        active_sheet[f'C{row_f}'] = "Если оставлять"
+                        row_f += 1
+                        headers = main.find_elements(By.CSS_SELECTOR, class_5)
+                        rows = main.find_elements(By.CSS_SELECTOR, class_4)
+                        percents = main.find_elements(By.CSS_SELECTOR, class_6)
+
+                        percents = [percent for percent in percents if percent.text != '']
+
+                        rows = list(set([row_.text for row_ in rows if row_.text != '']))[::-1]
+                        for i in range(2):
+                            active_sheet[f'{chr(65 + i)}{row_f}'] = headers[i].text
+                        row_f += 1
+                        for i in range(3):
+                            active_sheet[f'A{row_f + i}'] = rows[i]
+                        for i in range(3):
+                            for j in range(2):
+                                active_sheet[f'{chr(66 + j)}{row_f}'] = percents[2 * i + j].text
+                            row_f += 1
+                        row_f += 1
+                    elif "Наличный" in account_name.text:
+                        row_f += 1
+                        active_sheet[f'A{row_f}'] = account_name.text
+                        active_sheet[f'B{row_f}'] = 'Процент'
+                        active_sheet[f'C{row_f}'] = 'Срок'
+                        row_f += 1
+                        for i in range(2):
+                            if i == 1:
+                                main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
+                                    EC.presence_of_element_located((By.ID, "root"))
+                                )
+                            nums = main.find_elements(By.CSS_SELECTOR, class_4)
+                            num = nums[0]
+                            for number in nums:
+                                if '0' in number.text:
+                                    num = number
+                            active_sheet[f'A{row_f}'] = num.text
+                            percents = main.find_elements(By.CSS_SELECTOR, class_6)
+                            percents = [percent for percent in percents if percent.text != '']
+                            active_sheet[f'B{row_f}'] = max_perc(percents)
+                            periods = main.find_elements(By.CSS_SELECTOR, class_5)
+                            for period in periods:
+                                if 'день' in period.text or 'дней' in period.text:
+                                    active_sheet[f'C{row_f}'] = period.text
+                            if i == 0:
+                                driver.execute_script(f"window.scrollBy(0, {650})")
+                                time.sleep(1)
+                                buttons = main.find_elements(By.CSS_SELECTOR, '.tabs-headerstyles__TabTitleHorizontal-foundation-kit__sc-1w1sfys-2.fxYqKy')
+                                for button in buttons:
+                                    if 'Доходность' in button.text:
+                                        action = webdriver.common.action_chains.ActionChains(driver)
+                                        action.move_to_element_with_offset(button, 2, 2)
+                                        action.click()
+                                        action.perform()
+                                        time.sleep(1)
+                                        break
+                            row_f += 1
+                    elif "преимущество" in account_name.text:
+                        row_f += 1
+                        active_sheet[f'A{row_f}'] = account_name.text
+                        active_sheet[f'B{row_f}'] = "Если снимать"
+                        active_sheet[f'C{row_f}'] = "Если оставлять"
+                        row_f += 1
+                        rows = main.find_elements(By.CSS_SELECTOR, class_4)
+                        headers = main.find_elements(By.CSS_SELECTOR, class_5)
+                        percents = main.find_elements(By.CSS_SELECTOR, class_6)
+                        for i in range(len(headers)):
+                            active_sheet[f'{chr(65 + i)}{row_f}'] = headers[i].text
+                        row_f += 1
+                        for i in range(len(rows)):
+                            active_sheet[f'A{row_f}'] = rows[i].text
+                            for j in range(2):
+                                active_sheet[f'{chr(66 + j)}{row_f}'] = percents[i * 2 + j].text
+                            row_f += 1
+                        row_f += 1
+                    elif "Выгодное" in account_name.text:
+                        time.sleep(2)
+                        active_sheet[f'A{row_f}'] = account_name.text
+                        active_sheet[f'B{row_f}'] = "Процент"
+                        active_sheet[f'C{row_f}'] = "Срок"
+                        row_f += 1
+                        info = main.find_elements(By.CSS_SELECTOR, class_3)
+                        info = [i for i in info if i.text != '']
+                        active_sheet[f'B{row_f}'] = info[3].text
+                        active_sheet[f"C{row_f}"] = info[2].text
+                        row_f += 1
+
+                    else:
+                        active_sheet[f'A{row_f}'] = account_name.text
+                        active_sheet[f'B{row_f}'] = "Процент"
+                        active_sheet[f'C{row_f}'] = "Срок"
+                        row_f += 1
+                        perc = []
+                        info = main.find_elements(By.CSS_SELECTOR, class_6)
+                        if not info:
+                            info = main.find_elements(By.CSS_SELECTOR, class_3)
+                        for i in info:
+                            if "д" and "е" in i.text:
+                                active_sheet[f'C{row_f}'] = i.text
+                                break
+                        for i in info:
+                            if '%' in i.text and 'до' not in i.text:
+                                perc.append(i)
+                        active_sheet[f'B{row_f}'] = max_perc(perc)
+                        row_f += 1
+                    break
+            except Exception as e:
+                # exc_type, exc_obj, exc_tb = sys.exc_info()
+                # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                # print(e, exc_type, fname, exc_tb.tb_lineno)
+                time.sleep(1)
+
+
+def vtb_private_write(driver, active_sheet, row_f):
     driver.get('https://private.vtb.ru/our-solutions/classical-services/vklady')
     main = driver.find_element(By.CLASS_NAME, 'mw')
     boxes = main.find_elements(By.CSS_SELECTOR, '.fh-item')
@@ -168,13 +371,13 @@ def vtb_write(driver: webdriver, active_sheet, row_f, hrefs):
                     break
 
             except Exception as e:
-                exc_type, exc_obj, exc_tb = sys.exc_info()
-                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                # exc_type, exc_obj, exc_tb = sys.exc_info()
+                # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
                 # print(e, exc_type, fname, exc_tb.tb_lineno)
                 time.sleep(1)
 
 
-def get_hrefs_vtb(driver: webdriver):
+def get_hrefs_vtb(driver: webdriver, href):
     """
     Собственно говоря находит все ссылки из раздела "вклады и счета", которые введут на вклады.
     Сначала смотрит под какими индексами названия имеют слово "вклад", а потом из всех ссылок "Подробные условия"
@@ -183,9 +386,10 @@ def get_hrefs_vtb(driver: webdriver):
     2) [Веб элементы "Подробные условия"]
     3) Из списка 2 берём элементы под индексами [1, 2]
     :param driver: browser
+    :param href: Где искать(пытаться)
     """
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
-    driver.get('https://www.vtb.ru/personal/vklady-i-scheta/')
+    driver.get(href)
     time.sleep(3)  # чтобы не выдавало ошибку. Элементы не успевают прогружаться
     browser.execute_script(f"window.scrollBy(0, {1500})")
     time.sleep(1)
@@ -227,7 +431,7 @@ if __name__ == '__main__':
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     """Классическое предупреждение для будущих разработчиков: вроде как в селениуме собираются убрать параметр
     executable_path (см. DeprecationWarning при запуске), но сейчас же у меня, как бы я ни пытался, не получается
     использовать service=... . Возможно, в будущем это уже будет работать, так что вам придётся с этим запаритсья.
@@ -239,10 +443,12 @@ if __name__ == '__main__':
     wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
     sheet = wb.worksheets[2]
     sheet_1 = wb.worksheets[3]
+    sheet_2 = wb.worksheets[4]
     """В строчке 146 в квадратных скобках указывается номер листа эксель файла.
     Название можно поменять, но и тогда название файла поменяйте."""
     row = 1
-    vtb_write(browser, sheet, row, get_hrefs_vtb(browser))
-    vrb_premium_write(browser, sheet_1, row)
+    vtb_write(browser, sheet, row, get_hrefs_vtb(browser, 'https://www.vtb.ru/personal/vklady-i-scheta/'))
+    vtb_private_write(browser, sheet_1, row)
+    vtb_premium_write(browser, sheet_2, row)
     browser.quit()
     wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')

@@ -29,6 +29,7 @@ def write_strong(driver: webdriver, active_sheet, row_f):
     for i in range(2):
         scroll(driver)
         time.sleep(1)
+    active_sheet[f'A{row_f - 1}'] = "Сильная ставка"
     main = driver.find_element(By.CLASS_NAME, 'wrapper')
     table = main.find_element(By.TAG_NAME, 'table')
     headers = table.find_element(By.TAG_NAME, 'thead').find_elements(By.TAG_NAME, 'th')
@@ -205,7 +206,7 @@ def psb_write(driver, active_sheet, row_f):
 
 if __name__ == '__main__':
     wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
-    sheet = wb.worksheets[12]
+    sheet = wb.worksheets[13]
 
     warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
@@ -220,8 +221,8 @@ if __name__ == '__main__':
     browser = webdriver.Chrome(executable_path=PATH, options=options)  # executable_path=PATH, chrome_options=options
 
     row = 1
-    psb_write(browser, sheet, row)
     try:
+        psb_write(browser, sheet, row)
         print(F"    proccessing 4/4...")
         write_strong(browser, sheet, 25)
     except Exception as e:

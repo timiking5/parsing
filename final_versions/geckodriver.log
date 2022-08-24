@@ -747,8 +747,8 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://localhost:58405/devtools/browser/dbaaa716-38fe-4830-97b4-de59cade5240
 1661243507640	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
 JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
-1:58510
-1661243555421	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "58511" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileSiNTyi"
+Exiting due to channel error.
+::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "58511" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileSiNTyi"
 1661243556257	Marionette	INFO	Marionette enabled
 1661243556262	Marionette	INFO	Listening on port 58528
 WebDriver BiDi listening on ws://localhost:58511
@@ -1632,8 +1632,9 @@ Read port: 64728
 1661266021658	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileqWNmNp\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:64702/devtools/browser/38dd2810-e29f-4b88-b51e-6065e8841861
-1661266054781	geckodriver	INFO	Listening on 127.0.0.1:64815
-1661266057852	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64816" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile4jFWGO"
+1661266339117	Marionette	INFO	Stopped listening on port 64728
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "64816" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile4jFWGO"
 1661266058174	Marionette	INFO	Marionette enabled
 1661266058179	Marionette	INFO	Listening on port 64833
 WebDriver BiDi listening on ws://localhost:64816
@@ -1652,3 +1653,1410 @@ WebDriver BiDi listening on ws://localhost:65108
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile335fWR\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:65108/devtools/browser/9e16e15f-f0c3-4047-b842-353b90ff5a87
 1661266218282	Marionette	INFO	Stopped listening on port 65122
+1661322969821	geckodriver	INFO	Listening on 127.0.0.1:50268
+1661322972980	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "50269" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileupU7l7"
+1661322973971	Marionette	INFO	Marionette enabled
+1661322973983	Marionette	INFO	Listening on port 50289
+WebDriver BiDi listening on ws://localhost:50269
+Read port: 50289
+1661322974305	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileupU7l7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50269/devtools/browser/093df17a-8483-4b15-892f-4f2d10d0bbfa
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661323059579	Marionette	INFO	Stopped listening on port 50289
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+1661323660261	geckodriver	INFO	Listening on 127.0.0.1:51160
+1661323663406	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "51161" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile6sZXSg"
+*** You are running in headless mode.
+1661323664211	Marionette	INFO	Marionette enabled
+1661323664221	Marionette	INFO	Listening on port 51174
+WebDriver BiDi listening on ws://localhost:51161
+Read port: 51174
+1661323664469	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile6sZXSg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51161/devtools/browser/d9a8f551-b909-479f-aee5-e519e35271b5
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:51210
+1661323679926	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "51211" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileFr3cM8"
+*** You are running in headless mode.
+1661323680968	Marionette	INFO	Marionette enabled
+1661323680979	Marionette	INFO	Listening on port 51224
+WebDriver BiDi listening on ws://localhost:51211
+Read port: 51224
+1661323681213	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileFr3cM8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51211/devtools/browser/c0922233-0c76-494a-a135-a431f8bc95ff
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1661325547316	geckodriver	INFO	Listening on 127.0.0.1:52496
+1661325550428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "52497" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile4jrD7a"
+*** You are running in headless mode.
+1661325551537	Marionette	INFO	Marionette enabled
+1661325551550	Marionette	INFO	Listening on port 52512
+WebDriver BiDi listening on ws://localhost:52497
+Read port: 52512
+1661325551766	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile4jrD7a\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52497/devtools/browser/05aa690a-4d68-4221-9dd5-46a8019feb72
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661325612030	geckodriver	INFO	Listening on 127.0.0.1:52608
+1661325615106	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "52609" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileT9x6oy"
+1661325616043	Marionette	INFO	Marionette enabled
+1661325616052	Marionette	INFO	Listening on port 52625
+WebDriver BiDi listening on ws://localhost:52609
+Read port: 52625
+1661325616491	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileT9x6oy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52609/devtools/browser/ea26565b-a217-401f-95c3-3e07ea375b3d
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661325677209	geckodriver	INFO	Listening on 127.0.0.1:52726
+1661325680301	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "52727" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiledxTtOs"
+1661325681013	Marionette	INFO	Marionette enabled
+1661325681024	Marionette	INFO	Listening on port 52745
+WebDriver BiDi listening on ws://localhost:52727
+Read port: 52745
+1661325681418	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiledxTtOs\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52727/devtools/browser/93588085-b5d7-488e-9e64-ea0fb7f3fc1b
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661325734776	Marionette	INFO	Stopped listening on port 52745
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661325741445	geckodriver	INFO	Listening on 127.0.0.1:52861
+1661325744582	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "52862" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileAunufJ"
+1661325745186	Marionette	INFO	Marionette enabled
+1661325745191	Marionette	INFO	Listening on port 52877
+WebDriver BiDi listening on ws://localhost:52862
+Read port: 52877
+1661325745520	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileAunufJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52862/devtools/browser/b9985ebc-64b8-4b57-829e-4a2a11cbb674
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661325840290	geckodriver	INFO	Listening on 127.0.0.1:53037
+1661325843424	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53038" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileIgSkLA"
+1661325844333	Marionette	INFO	Marionette enabled
+1661325844338	Marionette	INFO	Listening on port 53058
+WebDriver BiDi listening on ws://localhost:53038
+Read port: 53058
+1661325844625	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileIgSkLA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53038/devtools/browser/cbb8617b-8096-4ddd-854c-4c4c936cdcbb
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661325986957	geckodriver	INFO	Listening on 127.0.0.1:53202
+1661325990067	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53203" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile7U2xot"
+1661325991182	Marionette	INFO	Marionette enabled
+1661325991187	Marionette	INFO	Listening on port 53226
+WebDriver BiDi listening on ws://localhost:53203
+Read port: 53226
+1661325991453	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile7U2xot\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53203/devtools/browser/beee409d-ae69-40f0-a13c-95ca64a8b908
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661326017955	Marionette	INFO	Stopped listening on port 53226
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661326024442	geckodriver	INFO	Listening on 127.0.0.1:53334
+1661326027583	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53335" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileG67POr"
+1661326028447	Marionette	INFO	Marionette enabled
+1661326028453	Marionette	INFO	Listening on port 53353
+WebDriver BiDi listening on ws://localhost:53335
+Read port: 53353
+1661326028739	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1661326031926	geckodriver	INFO	Listening on 127.0.0.1:53372
+1661326035052	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53373" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileyeuSvg"
+1661326035843	Marionette	INFO	Marionette enabled
+1661326035853	Marionette	INFO	Listening on port 53388
+WebDriver BiDi listening on ws://localhost:53373
+Read port: 53388
+1661326036279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileyeuSvg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53373/devtools/browser/d13455d3-f551-4d7d-a4ac-5e50ce6a6ea7
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661326222430	geckodriver	INFO	Listening on 127.0.0.1:53649
+1661326225553	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53650" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilegeSr6W"
+1661326226486	Marionette	INFO	Marionette enabled
+1661326226496	Marionette	INFO	Listening on port 53665
+Read port: 53665
+WebDriver BiDi listening on ws://localhost:53650
+1661326226955	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilegeSr6W\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53650/devtools/browser/c2cb17c5-e640-4334-9687-97eddb63ac00
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661326269756	Marionette	INFO	Stopped listening on port 53665
+!!! error running onStopped callback: TypeError: callback is not a function
+1661326446433	geckodriver	INFO	Listening on 127.0.0.1:53922
+1661326449579	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53923" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile8cIA6o"
+1661326450600	Marionette	INFO	Marionette enabled
+1661326450613	Marionette	INFO	Listening on port 53938
+WebDriver BiDi listening on ws://localhost:53923
+Read port: 53938
+1661326451014	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile8cIA6o\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53923/devtools/browser/2c982126-d6e2-441f-9e86-bc60da9ea355
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661328636453	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.error: "Unable to find target with innerWindowId:4294967302"
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+console.error: "Unable to find target with innerWindowId:4294967303"
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+console.error: "Unable to find target with innerWindowId:4294967304"
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://devtools/client/inspector/rules/utils/utils.js, line 186: TypeError: rule is undefined
+console.error: "isValidHoverTarget rejected with unexpected reason:"
+console.error: (new TypeError("rule is undefined", "resource://devtools/client/inspector/rules/utils/utils.js", 186))
+console.error: "isValidHoverTarget rejected with unexpected reason:"
+console.error: (new TypeError("rule is undefined", "resource://devtools/client/inspector/rules/utils/utils.js", 186))
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661330649460	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.error: "Unable to find target with innerWindowId:4294967305"
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661333594405	Marionette	INFO	Stopped listening on port 53938
+[Parent 5900, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileyXqyeS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57774/devtools/browser/a9782dd3-3f58-49f3-99a4-1bba9009b4bb
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661330763783	Marionette	INFO	Stopped listening on port 57796
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661330836410	geckodriver	INFO	Listening on 127.0.0.1:57946
+1661330839544	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "57947" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileXTGKTn"
+1661330840194	Marionette	INFO	Marionette enabled
+1661330840200	Marionette	INFO	Listening on port 57971
+WebDriver BiDi listening on ws://localhost:57947
+Read port: 57971
+1661330840413	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileXTGKTn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57947/devtools/browser/863f7619-4445-43b3-b3bf-1be65c34bc30
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661330947223	Marionette	INFO	Stopped listening on port 57971
+1661331295860	geckodriver	INFO	Listening on 127.0.0.1:58539
+1661331298958	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "58540" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileuXAxiX"
+1661331300015	Marionette	INFO	Marionette enabled
+1661331300028	Marionette	INFO	Listening on port 58561
+WebDriver BiDi listening on ws://localhost:58540
+Read port: 58561
+1661331300320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileuXAxiX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58540/devtools/browser/716c926c-8a8d-4411-97cd-f61733499964
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661331400503	Marionette	INFO	Stopped listening on port 58561
+!!! error running onStopped callback: TypeError: callback is not a function
+1661331793253	geckodriver	INFO	Listening on 127.0.0.1:59207
+1661331796316	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "59208" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileGE7JDK"
+1661331796824	Marionette	INFO	Marionette enabled
+1661331796831	Marionette	INFO	Listening on port 59241
+WebDriver BiDi listening on ws://localhost:59208
+Read port: 59241
+1661331797039	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1661331823115	geckodriver	INFO	Listening on 127.0.0.1:59301
+1661331826268	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "59302" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile1Iy89U"
+1661331827148	Marionette	INFO	Marionette enabled
+1661331827156	Marionette	INFO	Listening on port 59317
+WebDriver BiDi listening on ws://localhost:59302
+Read port: 59317
+1661331827380	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile1Iy89U\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59302/devtools/browser/6a4758f0-cb86-4211-85dd-9dd3a8ea4e67
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661331847558	Marionette	INFO	Stopped listening on port 59317
+1661331890975	geckodriver	INFO	Listening on 127.0.0.1:59424
+1661331894115	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "59425" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile2Lhe7G"
+1661331895209	Marionette	INFO	Marionette enabled
+1661331895223	Marionette	INFO	Listening on port 59441
+WebDriver BiDi listening on ws://localhost:59425
+Read port: 59441
+1661331895502	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile2Lhe7G\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59425/devtools/browser/e7c672d7-c7ca-4231-b395-658312a98863
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661331911407	Marionette	INFO	Stopped listening on port 59441
+1661331982596	geckodriver	INFO	Listening on 127.0.0.1:59601
+1661331985724	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "59602" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilecXtEvb"
+1661331986611	Marionette	INFO	Marionette enabled
+1661331986617	Marionette	INFO	Listening on port 59617
+WebDriver BiDi listening on ws://localhost:59602
+Read port: 59617
+1661331986804	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilecXtEvb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59602/devtools/browser/68e2f620-92c9-476a-91a4-96df15c36bb6
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661332013539	Marionette	INFO	Stopped listening on port 59617
+[Parent 17488, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1661332092379	geckodriver	INFO	Listening on 127.0.0.1:59795
+1661332095500	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "59796" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileWdga1O"
+1661332096548	Marionette	INFO	Marionette enabled
+1661332096559	Marionette	INFO	Listening on port 59812
+WebDriver BiDi listening on ws://localhost:59796
+Read port: 59812
+1661332096885	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileWdga1O\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59796/devtools/browser/a72417b7-7413-44b3-bb2a-93255032b142
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661332112427	Marionette	INFO	Stopped listening on port 59812
+1661332166195	geckodriver	INFO	Listening on 127.0.0.1:59952
+1661332190263	geckodriver	INFO	Listening on 127.0.0.1:60016
+1661332193356	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "60017" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileobUkqj"
+1661332193756	Marionette	INFO	Marionette enabled
+1661332193762	Marionette	INFO	Listening on port 60036
+WebDriver BiDi listening on ws://localhost:60017
+Read port: 60036
+1661332193942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileobUkqj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60017/devtools/browser/243e9add-c6b1-4398-a2c3-61c8decaa733
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661332216320	Marionette	INFO	Stopped listening on port 60036
+1661332771334	geckodriver	INFO	Listening on 127.0.0.1:60548
+1661332774459	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "60549" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileewZ0qi"
+1661332775509	Marionette	INFO	Marionette enabled
+1661332775521	Marionette	INFO	Listening on port 60572
+WebDriver BiDi listening on ws://localhost:60549
+Read port: 60572
+1661332775793	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileewZ0qi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60549/devtools/browser/a83bab0c-f081-41b5-a0dd-406f17174ef6
+1661332801623	Marionette	INFO	Stopped listening on port 60572
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661332805833	geckodriver	INFO	Listening on 127.0.0.1:60646
+1661332808948	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "60647" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileebrrGk"
+1661332809496	Marionette	INFO	Marionette enabled
+1661332809502	Marionette	INFO	Listening on port 60661
+WebDriver BiDi listening on ws://localhost:60647
+Read port: 60661
+1661332809859	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileebrrGk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60647/devtools/browser/27922815-1d9a-4ef4-a0f8-80033937b327
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661332827672	Marionette	INFO	Stopped listening on port 60661
+1661332878492	geckodriver	INFO	Listening on 127.0.0.1:60793
+1661332881545	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "60794" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileycDWk1"
+1661332882701	Marionette	INFO	Marionette enabled
+1661332882712	Marionette	INFO	Listening on port 60810
+WebDriver BiDi listening on ws://localhost:60794
+Read port: 60810
+1661332883038	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileycDWk1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60794/devtools/browser/bd236c72-2321-4a70-86dc-9c9f8965178e
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661333102612	Marionette	INFO	Stopped listening on port 60810
+1661333226901	geckodriver	INFO	Listening on 127.0.0.1:61432
+1661333229992	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "61433" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilebSooWP"
+1661333230640	Marionette	INFO	Marionette enabled
+1661333230650	Marionette	INFO	Listening on port 61448
+WebDriver BiDi listening on ws://localhost:61433
+Read port: 61448
+1661333230904	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilebSooWP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61433/devtools/browser/2c90dfa9-9788-45b3-a46c-b580cb5549b0
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661333255794	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661333322300	Marionette	INFO	Stopped listening on port 61448
+1661338404530	geckodriver	INFO	Listening on 127.0.0.1:51334
+1661338407642	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "51335" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileZSkzbO"
+1661338408476	Marionette	INFO	Marionette enabled
+1661338408482	Marionette	INFO	Listening on port 51348
+WebDriver BiDi listening on ws://localhost:51335
+Read port: 51348
+1661338408792	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileZSkzbO\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51335/devtools/browser/2c4d4a08-4b38-4488-8756-419f84d63184
+1661338421600	Marionette	INFO	Stopped listening on port 51348
+1661338424508	geckodriver	INFO	Listening on 127.0.0.1:51395
+1661338427656	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "51396" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileiCiVZw"
+1661338428568	Marionette	INFO	Marionette enabled
+1661338428576	Marionette	INFO	Listening on port 51410
+WebDriver BiDi listening on ws://localhost:51396
+Read port: 51410
+1661338428941	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileiCiVZw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51396/devtools/browser/8a4de875-3040-424d-a14b-8fa7267d2390
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661338535620	Marionette	INFO	Stopped listening on port 51410
+!!! error running onStopped callback: TypeError: callback is not a function
+1661338538406	geckodriver	INFO	Listening on 127.0.0.1:51599
+1661338541550	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "51600" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilerd4SbK"
+1661338542517	Marionette	INFO	Marionette enabled
+1661338542524	Marionette	INFO	Listening on port 51613
+WebDriver BiDi listening on ws://localhost:51600
+Read port: 51613
+1661338542705	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilerd4SbK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51600/devtools/browser/209ef0df-a9b7-4ffe-afad-11984e1e8af3
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661338626240	Marionette	INFO	Stopped listening on port 51613
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+!!! error running onStopped callback: TypeError: callback is not a function
+1661339489419	geckodriver	INFO	Listening on 127.0.0.1:52571
+1661339492569	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "52572" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileXdvFIb"
+*** You are running in headless mode.
+1661339493504	Marionette	INFO	Marionette enabled
+1661339493515	Marionette	INFO	Listening on port 52585
+WebDriver BiDi listening on ws://localhost:52572
+Read port: 52585
+1661339493740	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileXdvFIb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52572/devtools/browser/7c7407a5-f757-4d52-ab13-509a06005b63
+1661339818177	Marionette	INFO	Stopped listening on port 52585
+1661339841198	geckodriver	INFO	Listening on 127.0.0.1:52674
+1661339844329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "52675" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileWoaQkZ"
+1661339845279	Marionette	INFO	Marionette enabled
+1661339845286	Marionette	INFO	Listening on port 52688
+WebDriver BiDi listening on ws://localhost:52675
+Read port: 52688
+1661339845516	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileWoaQkZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52675/devtools/browser/fbc82843-4221-42be-aec2-48a6b4256580
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/istoriya-uspeha/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/vklad-ypravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nadezhnaya-osnova/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-v-buduschee/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-bolshie-vozmozhnosti/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/cennost-dostijeniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-vash-pensionnyi/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-upravlyaemiy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-perviy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vashe-preimushestvo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vigodnoe-nachalo/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-nadezhnaya-osnova-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-novoe-vremya/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/nalichniy/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/privilegia/premialnye-produkty/vklad-istoriya-uspeha-privilegia/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661340056350	Marionette	INFO	Stopped listening on port 52688
+1661340059004	geckodriver	INFO	Listening on 127.0.0.1:53010
+1661340062134	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--headless" "--remote-debugging-port" "53011" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileYen4My"
+*** You are running in headless mode.
+1661340063289	Marionette	INFO	Marionette enabled
+1661340063296	Marionette	INFO	Listening on port 53024
+WebDriver BiDi listening on ws://localhost:53011
+Read port: 53024
+1661340063544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileYen4My\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53011/devtools/browser/1ea4b9cf-9342-4537-8ec3-8be71f3a38a9
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661340149271	Marionette	INFO	Stopped listening on port 53024
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+1661340458768	geckodriver	INFO	Listening on 127.0.0.1:53395
+1661340461881	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "53396" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileZNm8Zg"
+*** You are running in headless mode.
+1661340462932	Marionette	INFO	Marionette enabled
+1661340462937	Marionette	INFO	Listening on port 53409
+WebDriver BiDi listening on ws://localhost:53396
+Read port: 53409
+1661340463280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileZNm8Zg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53396/devtools/browser/fcc5e9c3-afe1-424e-a0cc-11a0d12dc6ca
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661340595760	Marionette	INFO	Stopped listening on port 53409
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+1661340653707	geckodriver	INFO	Listening on 127.0.0.1:53781
+1661340656791	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53782" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileL7fwzD"
+1661340657574	Marionette	INFO	Marionette enabled
+1661340657582	Marionette	INFO	Listening on port 53795
+WebDriver BiDi listening on ws://localhost:53782
+Read port: 53795
+1661340657712	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileL7fwzD\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53782/devtools/browser/8b1aa124-7c7e-489c-8e81-b694872268b3
+1661340911769	Marionette	INFO	Stopped listening on port 53795
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661340914469	geckodriver	INFO	Listening on 127.0.0.1:53926
+1661340917515	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "53927" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileLlqAjF"
+1661340917830	Marionette	INFO	Marionette enabled
+1661340917835	Marionette	INFO	Listening on port 53938
+WebDriver BiDi listening on ws://localhost:53927
+Read port: 53938
+1661340918114	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileLlqAjF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53927/devtools/browser/64cbf151-ca50-4b00-b347-37f5601e3db3
+1661340975174	Marionette	INFO	Stopped listening on port 53938
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661340978107	geckodriver	INFO	Listening on 127.0.0.1:54014
+1661340981155	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "window-size=1920,1080" "--remote-debugging-port" "54015" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileQrV4Iy"
+1661340981476	Marionette	INFO	Marionette enabled
+1661340981480	Marionette	INFO	Listening on port 54027
+WebDriver BiDi listening on ws://localhost:54015
+Read port: 54027
+1661340981707	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileQrV4Iy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54015/devtools/browser/e0c86c70-9f72-4b0f-ab2d-5a2f445a1093
+1661341198438	Marionette	INFO	Stopped listening on port 54027
+1661341338232	geckodriver	INFO	Listening on 127.0.0.1:54239
+1661341341282	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "54240" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiledgz5W3"
+*** You are running in headless mode.
+1661341341613	Marionette	INFO	Marionette enabled
+1661341341617	Marionette	INFO	Listening on port 54258
+WebDriver BiDi listening on ws://localhost:54240
+Read port: 54258
+1661341341818	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiledgz5W3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54240/devtools/browser/9125fa16-9cc8-4f48-ad7c-dab01582dbeb
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.vtb.ru/, line 29: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661341498277	Marionette	INFO	Stopped listening on port 54258
+1661342710432	geckodriver	INFO	Listening on 127.0.0.1:55356
+1661342713489	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "55357" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileCxsuZv"
+*** You are running in headless mode.
+1661342713814	Marionette	INFO	Marionette enabled
+1661342713819	Marionette	INFO	Listening on port 55370
+WebDriver BiDi listening on ws://localhost:55357
+Read port: 55370
+1661342714109	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileCxsuZv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55357/devtools/browser/bd94c466-04e3-4a02-9ca6-da0533db9f28
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.vtb.ru/, line 29: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+1661342852901	Marionette	INFO	Stopped listening on port 55370
+1661342888817	geckodriver	INFO	Listening on 127.0.0.1:55868
+1661342891837	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "55869" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileZc3MRa"
+*** You are running in headless mode.
+1661342892185	Marionette	INFO	Marionette enabled
+1661342892190	Marionette	INFO	Listening on port 55892
+WebDriver BiDi listening on ws://localhost:55869
+Read port: 55892
+1661342892382	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileZc3MRa\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55869/devtools/browser/94dfcf2a-cef4-4bfa-a785-f1a10e323b1c
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661342896479	Marionette	INFO	Stopped listening on port 55892
+1661342940118	geckodriver	INFO	Listening on 127.0.0.1:56044
+1661342943155	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "56045" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileCoGhLb"
+*** You are running in headless mode.
+1661342943474	Marionette	INFO	Marionette enabled
+1661342943479	Marionette	INFO	Listening on port 56065
+WebDriver BiDi listening on ws://localhost:56045
+Read port: 56065
+1661342943751	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileCoGhLb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56045/devtools/browser/2cbacf6b-22e9-48d6-925c-4ba3d3242616
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661342949093	Marionette	INFO	Stopped listening on port 56065
+1661343010500	geckodriver	INFO	Listening on 127.0.0.1:56296
+1661343013588	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "56297" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileBFrqJi"
+*** You are running in headless mode.
+1661343013916	Marionette	INFO	Marionette enabled
+1661343013920	Marionette	INFO	Listening on port 56317
+WebDriver BiDi listening on ws://localhost:56297
+Read port: 56317
+1661343014008	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileBFrqJi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56297/devtools/browser/ba8ba917-3c8d-4da6-9244-ea324ab0584c
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661343018246	Marionette	INFO	Stopped listening on port 56317
+[Parent 17624, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1661343058770	geckodriver	INFO	Listening on 127.0.0.1:56515
+1661343061832	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "56516" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile9149Se"
+*** You are running in headless mode.
+1661343062164	Marionette	INFO	Marionette enabled
+1661343062168	Marionette	INFO	Listening on port 56534
+WebDriver BiDi listening on ws://localhost:56516
+Read port: 56534
+1661343062431	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile9149Se\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56516/devtools/browser/dc20d217-c04b-48b1-b82a-cf80a0338e8c
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.vtb.ru/, line 29: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1661343135792	geckodriver	INFO	Listening on 127.0.0.1:56708
+1661343138859	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "56709" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilejZljYy"
+*** You are running in headless mode.
+1661343139178	Marionette	INFO	Marionette enabled
+1661343139182	Marionette	INFO	Listening on port 56734
+Read port: 56734
+WebDriver BiDi listening on ws://localhost:56709
+1661343139289	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilejZljYy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56709/devtools/browser/12fdf465-b4de-4deb-8887-ed0928d66706
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.vtb.ru/, line 29: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+1661343259400	Marionette	INFO	Stopped listening on port 56734
+1661343281249	geckodriver	INFO	Listening on 127.0.0.1:57135
+1661343284305	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "57136" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilenD6eyj"
+*** You are running in headless mode.
+1661343284633	Marionette	INFO	Marionette enabled
+1661343284638	Marionette	INFO	Listening on port 57149
+WebDriver BiDi listening on ws://localhost:57136
+Read port: 57149
+1661343284843	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilenD6eyj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57136/devtools/browser/3aa93c46-5a61-4c50-a2eb-8ee5dc51b1ea
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1661343299283	geckodriver	INFO	Listening on 127.0.0.1:57224
+1661343302322	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "57225" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileg20s37"
+*** You are running in headless mode.
+1661343302654	Marionette	INFO	Marionette enabled
+1661343302659	Marionette	INFO	Listening on port 57242
+WebDriver BiDi listening on ws://localhost:57225
+Read port: 57242
+1661343302947	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileg20s37\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57225/devtools/browser/ebe1c8ea-15a5-497a-b5fc-fef777194a90
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.vtb.ru/, line 29: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661343440398	Marionette	INFO	Stopped listening on port 57242
+1661343513885	geckodriver	INFO	Listening on 127.0.0.1:57800
+1661343516959	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "57801" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile7xTh3A"
+*** You are running in headless mode.
+1661343517294	Marionette	INFO	Marionette enabled
+1661343517299	Marionette	INFO	Listening on port 57820
+WebDriver BiDi listening on ws://localhost:57801
+Read port: 57820
+1661343517492	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile7xTh3A\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57801/devtools/browser/3aaa2864-baec-405d-813d-842a696d4598
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.vtb.ru/, line 29: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661343698831	Marionette	INFO	Stopped listening on port 57820
+1661343872177	geckodriver	INFO	Listening on 127.0.0.1:58481
+1661343875206	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "58482" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilen32p4Z"
+*** You are running in headless mode.
+1661343875537	Marionette	INFO	Marionette enabled
+1661343875543	Marionette	INFO	Listening on port 58499
+WebDriver BiDi listening on ws://localhost:58482
+Read port: 58499
+1661343875738	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilen32p4Z\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58482/devtools/browser/95b6835c-74c3-45de-b23a-44f8571503b9
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:58541
+1661343886241	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "58542" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileF73Gd5"
+*** You are running in headless mode.
+1661343886561	Marionette	INFO	Marionette enabled
+1661343886565	Marionette	INFO	Listening on port 58556
+WebDriver BiDi listening on ws://localhost:58542
+Read port: 58556
+1661343886848	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileF73Gd5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58542/devtools/browser/30a1d95f-8ad0-4edb-8a9c-1179b329ae6f
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661343890625	Marionette	INFO	Stopped listening on port 58556
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 694: TypeError: this.tablesData[table] is undefined
+1661343936309	geckodriver	INFO	Listening on 127.0.0.1:58743
+1661343939366	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "58744" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilegTYcVX"
+*** You are running in headless mode.
+1661343970873	geckodriver	INFO	Listening on 127.0.0.1:58831
+1661343973912	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "58832" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiletOU2Wn"
+*** You are running in headless mode.
+1661343974235	Marionette	INFO	Marionette enabled
+1661343974239	Marionette	INFO	Listening on port 58852
+WebDriver BiDi listening on ws://localhost:58832
+Read port: 58852
+1661343974327	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofiletOU2Wn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58832/devtools/browser/35f5cfbf-9875-4177-a9c3-4fd155a0f300
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661344008373	Marionette	INFO	Stopped listening on port 58852
+1661344032561	geckodriver	INFO	Listening on 127.0.0.1:59130
+1661344035596	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "59131" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilepeRmiv"
+1661344035928	Marionette	INFO	Marionette enabled
+1661344035932	Marionette	INFO	Listening on port 59147
+WebDriver BiDi listening on ws://localhost:59131
+Read port: 59147
+1661344036145	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilepeRmiv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59131/devtools/browser/2f50f9b1-4b0c-47ff-9c85-00b96c6a28cb
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661344075726	Marionette	INFO	Stopped listening on port 59147
+1661344095346	geckodriver	INFO	Listening on 127.0.0.1:59437
+1661344098386	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "59438" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileg20nQx"
+1661344098710	Marionette	INFO	Marionette enabled
+1661344098714	Marionette	INFO	Listening on port 59458
+WebDriver BiDi listening on ws://localhost:59438
+Read port: 59458
+1661344098943	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileg20nQx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59438/devtools/browser/17d01299-2da7-4a66-b221-7e9a17df80c6
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661344144298	Marionette	INFO	Stopped listening on port 59458
+1661344180306	geckodriver	INFO	Listening on 127.0.0.1:59760
+1661344183370	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "59761" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilep5K0aR"
+1661344183695	Marionette	INFO	Marionette enabled
+1661344183700	Marionette	INFO	Listening on port 59780
+WebDriver BiDi listening on ws://localhost:59761
+Read port: 59780
+1661344183915	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilep5K0aR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59761/devtools/browser/2b06f3e5-98ed-4ceb-ba2b-4a08af902a59
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T3N2SPK, line 35: uncaught exception: [object Object]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661344275527	Marionette	INFO	Stopped listening on port 59780
+1661344316222	geckodriver	INFO	Listening on 127.0.0.1:60223
+1661344319263	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "60224" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileemC0Sc"
+1661344319592	Marionette	INFO	Marionette enabled
+1661344319598	Marionette	INFO	Listening on port 60242
+WebDriver BiDi listening on ws://localhost:60224
+Read port: 60242
+1661344319828	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileemC0Sc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60224/devtools/browser/6f9e45b5-fafc-42a6-8bd0-296c62d0f650
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344324927	Marionette	INFO	Stopped listening on port 60242
+[Parent 3520, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1661344371463	geckodriver	INFO	Listening on 127.0.0.1:60430
+1661344374501	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "60431" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilejN3RGs"
+1661344374825	Marionette	INFO	Marionette enabled
+1661344374830	Marionette	INFO	Listening on port 60458
+WebDriver BiDi listening on ws://localhost:60431
+Read port: 60458
+1661344375100	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilejN3RGs\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60431/devtools/browser/f32e4c7f-8b83-4570-b361-453760fa9370
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344383700	Marionette	INFO	Stopped listening on port 60458
+1661344404447	geckodriver	INFO	Listening on 127.0.0.1:60630
+1661344407520	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "60631" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilehN7fkW"
+1661344407847	Marionette	INFO	Marionette enabled
+1661344407852	Marionette	INFO	Listening on port 60649
+WebDriver BiDi listening on ws://localhost:60631
+Read port: 60649
+1661344408080	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilehN7fkW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60631/devtools/browser/43f6ea4b-c251-4e7e-beea-15709fca23cc
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344415830	Marionette	INFO	Stopped listening on port 60649
+1661344428212	geckodriver	INFO	Listening on 127.0.0.1:60810
+1661344431275	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "60811" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilehWbNX3"
+1661344431600	Marionette	INFO	Marionette enabled
+1661344431604	Marionette	INFO	Listening on port 60828
+WebDriver BiDi listening on ws://localhost:60811
+Read port: 60828
+1661344431910	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilehWbNX3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60811/devtools/browser/bc0e4d99-efc0-4169-9777-7c63a0a36cc0
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 594"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:594:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 594, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 594: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 577: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1661344459797	Marionette	INFO	Stopped listening on port 60828
+1661344505511	geckodriver	INFO	Listening on 127.0.0.1:61054
+1661344508526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "61055" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileBM2Bce"
+1661344508909	Marionette	INFO	Marionette enabled
+1661344508914	Marionette	INFO	Listening on port 61072
+WebDriver BiDi listening on ws://localhost:61055
+Read port: 61072
+1661344509133	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileBM2Bce\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61055/devtools/browser/8ecf2d1a-8b58-4878-af65-c4d1789a0c24
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344517009	Marionette	INFO	Stopped listening on port 61072
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661344567830	geckodriver	INFO	Listening on 127.0.0.1:61248
+1661344570871	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "61249" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileu2AIMa"
+1661344571190	Marionette	INFO	Marionette enabled
+1661344571194	Marionette	INFO	Listening on port 61261
+WebDriver BiDi listening on ws://localhost:61249
+Read port: 61261
+1661344571412	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileu2AIMa\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61249/devtools/browser/b3ca19c6-75a9-4c64-a9af-60148f488115
+1661344573238	Marionette	INFO	Stopped listening on port 61261
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344586925	geckodriver	INFO	Listening on 127.0.0.1:61366
+1661344589946	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "61367" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileI9zhuw"
+1661344590264	Marionette	INFO	Marionette enabled
+1661344590269	Marionette	INFO	Listening on port 61379
+WebDriver BiDi listening on ws://localhost:61367
+Read port: 61379
+1661344590556	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileI9zhuw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61367/devtools/browser/742b6a0d-6b71-4dd8-b5d5-995154a6622c
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344601343	Marionette	INFO	Stopped listening on port 61379
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661344615732	geckodriver	INFO	Listening on 127.0.0.1:61506
+1661344618789	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "61507" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile6b5KaM"
+1661344619124	Marionette	INFO	Marionette enabled
+1661344619129	Marionette	INFO	Listening on port 61528
+WebDriver BiDi listening on ws://localhost:61507
+Read port: 61528
+1661344619341	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofile6b5KaM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61507/devtools/browser/31361f84-6218-4c83-a7e7-0087c796ab53
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344654036	Marionette	INFO	Stopped listening on port 61528
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661344659734	geckodriver	INFO	Listening on 127.0.0.1:61697
+1661344662752	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--remote-debugging-port" "61698" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilek6hqxN"
+1661344663072	Marionette	INFO	Marionette enabled
+1661344663078	Marionette	INFO	Listening on port 61714
+WebDriver BiDi listening on ws://localhost:61698
+Read port: 61714
+1661344663364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilek6hqxN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61698/devtools/browser/9a3ce61f-829e-49d5-abc5-bdfae323b03a
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344856617	Marionette	INFO	Stopped listening on port 61714
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+ignore-certificate-errors" "--incognito" "--remote-debugging-port" "61952" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileH3gHji"
+1661344821848	Marionette	INFO	Marionette enabled
+1661344821853	Marionette	INFO	Listening on port 61970
+WebDriver BiDi listening on ws://localhost:61952
+Read port: 61970
+1661344822082	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofileH3gHji\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61952/devtools/browser/e76eeb91-1c39-438b-97bc-4a7042cd3b34
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+1661344858065	Marionette	INFO	Stopped listening on port 61970
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1661344908821	geckodriver	INFO	Listening on 127.0.0.1:62257
+1661344911876	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--ignore-certificate-errors" "--incognito" "--headless" "--remote-debugging-port" "62258" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilefgS0hX"
+*** You are running in headless mode.
+1661344912203	Marionette	INFO	Marionette enabled
+1661344912207	Marionette	INFO	Listening on port 62272
+WebDriver BiDi listening on ws://localhost:62258
+Read port: 62272
+1661344912469	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tima3\\AppData\\Local\\Temp\\rust_mozprofilefgS0hX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62258/devtools/browser/1ac466ef-05be-4c68-99c7-dd2590b98da0
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.vtb.ru/, line 29: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-seif/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript error: https://www.vtb.ru/_platform/app-43dd7041.js, line 1: Error: Request aborted
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 100: ReferenceError: findYandexUIDForAdriver is not defined
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 108: SyntaxError: expected property name, got '{'
+JavaScript error: https://www.vtb.ru/personal/vklady-i-scheta/nakopitelny-schet-kopilka/, line 134: SyntaxError: invalid assignment left-hand side
+JavaScript error: https://www.vtb.ru/_platform/ya-counter-goals.js, line 3: TypeError: submitButton is null
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://statad.ru/tracker.js?d=gazprombank.ru, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661345071550	Marionette	INFO	Stopped listening on port 62272

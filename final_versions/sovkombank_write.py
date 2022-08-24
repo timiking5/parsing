@@ -48,7 +48,7 @@ def sovkom_write(driver: webdriver, active_sheet, row_f):
 
 if __name__ == '__main__':
     wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
-    sheet = wb.worksheets[4]
+    sheet = wb.worksheets[5]
 
     warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"

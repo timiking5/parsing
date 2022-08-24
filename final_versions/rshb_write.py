@@ -152,14 +152,14 @@ def write_rshb_tables(driver: webdriver, active_sheet, row_f):
 
 if __name__ == '__main__':
     wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
-    sheet = wb.worksheets[10]
-    sheet_1 = wb.worksheets[11]
+    sheet = wb.worksheets[11]
+    sheet_1 = wb.worksheets[12]
 
     warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
 
     options = webdriver.ChromeOptions()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
     options.add_argument('--ignore-certificate-errors')

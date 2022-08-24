@@ -172,6 +172,7 @@ def gazprom_write(driver: webdriver, active_sheet, row_f):
 
             for i in range(len(buttons)):
                 active_sheet[f'{chr(col + i)}{row_f - 1}'] = buttons[i].text
+                active_sheet[f'{chr(col + i + 12)}{row_f - 1}'] = buttons[i].text
             for j in range(7):
                 active_sheet[f'A{row_f}'] = ammounts[j]
                 use_bar(ammounts[j], times[j], main)
@@ -225,14 +226,14 @@ if __name__ == '__main__':
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('window-size=1920,1080')
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
 
     row = 3
     wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
-    sheet = wb.worksheets[5]
+    sheet = wb.worksheets[6]
 
     browser = webdriver.Firefox(executable_path=PATH, options=options)
-    # browser.get("https://www.gazprombank.ru/personal/increase/deposits/detail/2491")
+
     row = gazprom_write(browser, sheet, row)
     take_tables(browser, sheet, row)
     browser.quit()

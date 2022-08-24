@@ -67,7 +67,6 @@ def mkb_get_table_curr(driver: webdriver, active_sheet, row_f):
             row_f += 1
 
 
-
 def start_curr(driver: webdriver, active_sheet, row_f):
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     periods = ['3 мес.', '6 мес.', '1 год', '18 мес.', '2 года']
@@ -356,14 +355,13 @@ if __name__ == '__main__':
         иногда он приводит к тому, что программа не работает.
         """
     browser = webdriver.Firefox(executable_path=PATH, options=options)
-    # browser.get("https://mkb.ru/personal/deposits/allinclusive?tabsBox0=0")
     row = 3
     wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
     sheet = wb.worksheets[0]
     sheet_1 = wb.worksheets[1]
-    # start(browser, sheet, row)
-    # get_table(browser, sheet, row)
-    # start_curr(browser, sheet_1, row)
+    start(browser, sheet, row)
+    get_table(browser, sheet, row)
+    start_curr(browser, sheet_1, row)
     mkb_get_table_curr(browser, sheet_1, row)
     browser.quit()
     wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')

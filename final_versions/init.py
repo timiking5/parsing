@@ -8,11 +8,12 @@ if __name__ == '__main__':
     filename = date.today().strftime("%d.%m.%y") + ".xlsx"
     wb = openpyxl.Workbook()
     list_names = ["mkb_curr", "vtb",
-                  "vtb_prem", "sovkom",
-                  "gazprom", "sber",
+                  "vtb_priv", "vtb_prem",
+                  "sovkom", "gazprom", "sber",
                   "sber_curr", "alfa",
                   "alfa_curr", "rshb",
-                  "rshb_prem", "psb"]
+                  "rshb_priv", "psb",
+                  "НС"]
     wb.worksheets[0].title = "mkb"
     for list_name in list_names:
         wb.create_sheet(list_name)

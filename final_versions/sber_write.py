@@ -21,6 +21,7 @@ def parse_curr(driver: webdriver, active_sheet, row_f):
     periods = ["3 мес", "6 мес", "9 мес", "12 мес", "18 мес", "2 года", "3 года"]
     slide_by = [0, 50, 30, 30, 60, 60, 120]
     char = ['₽', '$', '€']
+    currency = ["Рубль", "Доллар", "Евро"]
     driver.get('https://www.sberbank.ru/ru/person/contributions/depositsnew')
     time.sleep(3)
     driver.execute_script(f"window.scrollBy(0, {200})")
@@ -39,6 +40,7 @@ def parse_curr(driver: webdriver, active_sheet, row_f):
     find = main.find_element(By.CSS_SELECTOR, '.dk-sbol-button__content')
     for k in [1, 2]:
         buttons[k].click()
+        active_sheet[f'A{row_f}'] = currency[k]
         for i in range(len(periods)):
             active_sheet[f'{chr(66 + i)}{row_f}'] = periods[i]
         row_f += 1
@@ -226,8 +228,8 @@ def parse_sbervklad(driver: webdriver, active_sheet, row_f):
 
 if __name__ == '__main__':
     wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
-    sheet = wb.worksheets[6]
-    sheet_1 = wb.worksheets[7]
+    sheet = wb.worksheets[7]
+    sheet_1 = wb.worksheets[8]
     warnings.filterwarnings("ignore")
     PATH = "C:\\Program Files (x86)\\chromedriver.exe"
 

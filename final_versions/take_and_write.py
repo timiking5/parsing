@@ -1,6 +1,7 @@
 import time
-from selenium import webdriver
 import openpyxl
+from datetime import date
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
@@ -9,7 +10,68 @@ from selenium.webdriver.common import action_chains
 from selenium.webdriver.support import expected_conditions as EC
 
 
-row = 2
+def sovkom_parse(driver, active_sheet):
+    global row
+    time.sleep(2)
+    main = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, '.Layout'))
+            )
+    tables = main.find_elements(By.TAG_NAME, 'table')
+    for tble in tables:
+        if tble.text:
+            table = tble
+            break
+    else:
+        return
+    tds = table.find_elements(By.TAG_NAME, 'td')
+    percents = []
+
+    for td in tds:
+        if "%" in td.text and "о" not in td.text:
+            percents.append(td.text)
+
+    active_sheet[f'B{row}'] = main.find_element(By.TAG_NAME, 'h1').text
+    active_sheet[f'C{row}'] = min_perc(percents)
+    active_sheet[f'D{row}'] = max_perc(percents)
+    row += 1
+
+
+def min_perc(percents):
+    mn = percents[0]
+    for percent in percents:
+        if count_value(mn) > count_value(percent):
+            mn = percent
+    return mn
+
+
+def max_perc(percents):
+    mx = percents[0]
+    for percent in percents:
+        if count_value(mx) < count_value(percent):
+            mx = percent
+    return mx
+
+
+def count_value(perc: str):
+    return float(perc.replace(',', '.').strip('%'))
+
+
+def psb_get_table(driver: webdriver, active_sheet):
+    global row
+    time.sleep(2)
+    webdriver.common.action_chains.ActionChains(driver).scroll_by_amount(0, 1000).perform()
+    time.sleep(1)
+
+    main = driver.find_element(By.CLASS_NAME, 'layout')
+    text = main.find_elements(By.CSS_SELECTOR, '.text-p')
+    percents = []
+    for j in text:
+        if '%' in j.text and "о" not in j.text:
+            percents.append(j.text)
+    active_sheet[f'B{row}'] = main.find_element(By.TAG_NAME, 'h1').text
+    active_sheet[f'C{row}'] = percents[0]
+    active_sheet[f'D{row}'] = percents[1]
+    row += 1
 
 
 def gazprom_get_urls(driver, active_sheet):
@@ -29,6 +91,7 @@ def gazprom_get_urls(driver, active_sheet):
     driver.set_window_size(1124, 850)
     for href in hrefs:
         driver.get(href)
+        time.sleep(1)
         driver.execute_script(f"window.scrollBy(0, {700})")
         time.sleep(1)
         fl = 1
@@ -74,10 +137,10 @@ def gazprom_get_urls(driver, active_sheet):
                 active_sheet[f'D{row}'] = percents[0]
                 row += 1
             elif len(percents) >= 2:
-                if (percents[1] == '0,51%'):
+                if percents[1] == '0,51%':
                     percents[1], percents[3] = percents[3], percents[1]
-                active_sheet[f'D{row}'] = percents[0]
-                active_sheet[f'C{row}'] = percents[1]
+                active_sheet[f'C{row}'] = percents[0]
+                active_sheet[f'D{row}'] = percents[1]
                 row += 1
             else:
                 row += 1
@@ -104,12 +167,11 @@ def gazprom_get_urls(driver, active_sheet):
                 active_sheet[f'D{row}'] = percents[0]
                 row += 1
             elif len(percents) >= 2:
-                active_sheet[f'C{row}'] = percents[0]
-                active_sheet[f'D{row}'] = percents[len(percents) - 1]
+                active_sheet[f'C{row}'] = min_perc(percents)
+                active_sheet[f'D{row}'] = max_perc(percents)
                 row += 1
             else:
                 row += 1
-        print(percents)
 
 
 
@@ -260,7 +322,7 @@ def sber_get_urls(driver, active_sheet):
 
 def alfa_get_urls(driver, active_sheet):
     global row
-    css_selector = '.a1jIK.l1jIK.H1jIK.eG2mw.yG2mw.SG2mw.aaG2mw.i1Hrp.c1Hrp'
+    css_selector = '.aAaXg.lAaXg.HAaXg.eG2mw.yG2mw.SG2mw.aaG2mw.i1Hrp.c1Hrp'
     ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     element = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
         EC.presence_of_element_located((By.LINK_TEXT, "Вклады"))
@@ -287,7 +349,7 @@ def alfa_get_urls(driver, active_sheet):
             main = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
                 EC.presence_of_element_located((By.ID, "alfa"))
             )
-            search = main.find_elements(By.CSS_SELECTOR, '.a28gX.k28gX.h28gX.l28gX.c28gX.cxDc6')
+            search = main.find_elements(By.CSS_SELECTOR, '.a2N8K.k2N8K.h2N8K.l2N8K.c2N8K.cxDc6')
             account_name = main.find_element(By.CSS_SELECTOR, '.a1q6H.c1q6H.n1q6H.r1q6H')
             if account_name:
                 active_sheet[f'B{row}'] = account_name.text
@@ -371,23 +433,25 @@ urls = ['https://alfabank.ru/',
         'https://www.sberbank.ru/ru/person/contributions/depositsnew',
         'https://mkb.ru/personal/deposits',
         'https://www.rshb.ru/natural/deposits/',
-        'https://www.gazprombank.ru/personal/page/mob-accounts']
-sites = ['alfa', 'vtb', 'sber', 'mkb', 'rshb', 'gazprom']
-funcs = [alfa_get_urls, vtb_get_parse, sber_get_urls, mkb_get_urls, rshb_get_urls, gazprom_get_urls]
+        'https://www.gazprombank.ru/personal/page/mob-accounts',
+        'https://sovcombank.ru/deposits/onlain-kopilka',
+        'https://www.psbank.ru/Personal/SavingsAccount/Unlimited']
+sites = ['alfa', 'vtb', 'sber', 'mkb', 'rshb', 'gazprom', 'sovkom', 'psb']
+funcs = [alfa_get_urls, vtb_get_parse, sber_get_urls, mkb_get_urls, rshb_get_urls, gazprom_get_urls, sovkom_parse, psb_get_table]
 
 firefox_options = webdriver.FirefoxOptions()
 firefox_options.add_argument('--ignore-certificate-errors')
 firefox_options.add_argument('--incognito')
-# firefox_options.add_argument('--headless')
+firefox_options.add_argument('--headless')
 
 firefox = webdriver.Firefox(executable_path=PATH, options=firefox_options)
-firefox.set_window_size(1920, 10800)
+firefox.set_window_size(1920, 1080)
 
-wb = openpyxl.open('automated.xlsx')
-sheet = wb.worksheets[1]
-
+wb = openpyxl.open(date.today().strftime("%d.%m.%y") + '.xlsx')
+sheet = wb.worksheets[14]
+row = 1
 try:
-    for i in [0, 1, 2, 3, 4, 5]:  # range(len(urls))
+    for i in [0, 1, 2, 3, 4, 5, 6]:  # range(len(urls))
         print(i)
         firefox.get(urls[i])
         sheet[f'A{row}'] = sites[i]
@@ -398,8 +462,23 @@ except Exception as e:
     print(e, "crash", sep='\n')
 
 finally:
-    print("complete")
-    time.sleep(3)
-    # input()
-    wb.save('automated.xlsx')
+    print("almost complete")
     firefox.quit()
+
+chrome = ''
+
+try:
+    options = webdriver.ChromeOptions()
+    # options.add_argument("--headless")
+    chrome = webdriver.Chrome(executable_path="C:\\Program Files (x86)\\chromedriver.exe", options=options)
+    for i in [7]:
+        print(i)
+        chrome.get(urls[i])
+        sheet[f'A{row}'] = sites[i]
+        funcs[i](chrome, sheet)
+except Exception as e:
+    print(e)
+finally:
+    if chrome:
+        chrome.quit()
+    wb.save(date.today().strftime("%d.%m.%y") + '.xlsx')
